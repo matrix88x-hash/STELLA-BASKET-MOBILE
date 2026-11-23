@@ -1,0 +1,2761 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#092a59"><meta name="apple-mobile-web-app-capable" content="yes">
+<title>STELLA Basket Mobile · 2026/27</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="./icon.svg">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<meta name="apple-mobile-web-app-title" content="Stella Basket">
+<meta name="description" content="Calendari, classifiche e statistiche U15 e U19 Polisportiva Stella · 2026/27">
+<style>
+:root{--navy:#092a59;--navy2:#123e79;--yellow:#ffd728;--bg:#f3f6fb;--paper:#fff;--text:#152840;--muted:#60718a;--border:#dfe7f2;--green:#087a4d;--red:#be2b35;--shadow:0 8px 28px rgba(21,46,87,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--text)}button,input,select{font:inherit}button{cursor:pointer}header{background:linear-gradient(135deg,#092a59 0%,#164b91 100%);color:white;padding:19px max(20px,env(safe-area-inset-left)) 21px;position:sticky;top:0;z-index:10;box-shadow:0 4px 14px #092a5926}.head{max-width:1030px;margin:auto;display:flex;gap:14px;align-items:center;justify-content:space-between}.logo{display:flex;align-items:center;gap:12px}.emblem{display:grid;place-items:center;width:48px;height:48px;background:var(--yellow);color:var(--navy);border-radius:16px;font-size:27px}.brand{font-weight:850;letter-spacing:.4px;font-size:20px;line-height:1.05}.brand small{display:block;color:#cedcf0;font-size:11px;letter-spacing:1px;margin-top:6px;font-weight:600}.switch{display:flex;gap:4px;background:#ffffff24;border-radius:13px;padding:4px}.switch button{border:0;background:none;color:white;padding:9px 15px;border-radius:10px;font-weight:750}.switch button.active{background:var(--yellow);color:var(--navy)}main{max-width:1030px;margin:0 auto;padding:20px 18px 105px}.banner{border:1px solid #d5e4f5;background:#eaf2fd;border-radius:14px;padding:11px 15px;color:#31577f;font-size:12px;margin-bottom:17px}.section-title{font-size:19px;font-weight:850;margin:0 0 14px;letter-spacing:-.35px}.stack{display:grid;gap:13px}.card{background:white;border:1px solid var(--border);border-radius:17px;box-shadow:var(--shadow);padding:18px}.hero{background:var(--navy);color:white;border:0;overflow:hidden;position:relative}.hero:after{content:'🏀';position:absolute;right:-14px;top:-32px;font-size:145px;opacity:.09;transform:rotate(-18deg)}.eyebrow{font-size:11px;letter-spacing:1.1px;font-weight:800;text-transform:uppercase;color:var(--muted)}.hero .eyebrow{color:#c9d8ef}.big-match{font-weight:850;font-size:clamp(23px,4vw,32px);letter-spacing:-.6px;line-height:1.16;margin:15px 0 11px;position:relative}.hero-info{font-size:14px;color:#e7effc}.tag{display:inline-flex;align-items:center;border-radius:40px;background:#ecf2fa;color:#244c81;padding:5px 10px;font-size:11px;font-weight:800;white-space:nowrap}.tag.pending{background:#fff0d5;color:#895300}.tag.done{background:#dcf8e9;color:#05744a}.hero .tag{background:var(--yellow);color:var(--navy)}.row{display:flex;justify-content:space-between;align-items:center;gap:12px}.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}.kpi strong{display:block;font-size:25px;font-weight:850;color:var(--navy);line-height:1.2}.kpi span{color:var(--muted);font-size:11px;font-weight:650}.kpi.pf strong{color:#1661ae}.kpi.ps strong{color:#c92d35}.twocol{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.act{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}.pillbtn{background:var(--yellow);color:var(--navy);border:0;border-radius:10px;font-weight:800;padding:11px 15px}.ghost{border:1px solid #c7d7eb;background:white;color:var(--navy);border-radius:10px;font-weight:750;padding:10px 14px}.subtle{font-size:12px;color:var(--muted)}.warn{padding:12px;border-radius:12px;background:#fff8e6;border:1px solid #ffe5aa;font-size:12px}.list{display:grid;gap:8px}.match{display:grid;grid-template-columns:95px 1fr auto;gap:10px;align-items:center;padding:11px 10px;border:1px solid var(--border);border-radius:12px;background:#fff}.match.stella{background:#fff9d1;border-color:#f4d461}.when{font-size:12px;color:var(--muted)}.when b{display:block;color:var(--text);font-size:13px}.teams{font-size:13px;font-weight:730;min-width:0}.teams .vs{color:#97a6ba;font-size:10px;font-weight:600;margin:0 5px}.score{text-align:right;white-space:nowrap;font-weight:850;color:var(--navy);font-size:17px}.score small{display:block;font-size:10px;color:var(--muted);font-weight:650}.tabs{position:fixed;bottom:0;left:0;right:0;background:#fff;box-shadow:0 -4px 20px #07274e1b;display:flex;justify-content:center;z-index:11;padding-bottom:env(safe-area-inset-bottom);border-top:1px solid var(--border)}.tab{flex:1;max-width:240px;border:0;background:none;color:#718199;font-weight:750;font-size:11px;padding:10px 2px 11px}.tab .ico{font-size:21px;display:block;margin-bottom:3px}.tab.active{color:var(--navy)}.tab.active .ico{filter:saturate(1.2)}.controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}.field{width:100%;border:1px solid #cbd7e6;border-radius:11px;padding:12px 13px;background:#fff;min-width:0;outline-color:#3378c4}select.field{max-width:310px}.tablewrap{overflow:auto;border:1px solid var(--border);border-radius:14px;background:white}.standings{width:100%;border-collapse:collapse;font-size:13px;white-space:nowrap}.standings th{text-align:right;color:#667993;background:#edf3fc;font-weight:800;font-size:11px;padding:12px 9px}.standings th:nth-child(2){text-align:left}.standings td{padding:13px 9px;border-bottom:1px solid #edf0f6;text-align:right}.standings tr:last-child td{border-bottom:0}.standings td:nth-child(2){text-align:left;font-weight:800;cursor:pointer}.standings tr.stella{background:#fff6c7}.standings tr:active{background:#e8f1fa}.muted{color:var(--muted)}.small-title{font-size:15px;font-weight:850;margin:0 0 12px}.detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.detail-grid .mini{border:1px solid var(--border);border-radius:12px;background:#f7faff;padding:12px 10px}.mini strong{display:block;color:var(--navy);font-size:22px}.mini span{display:block;color:var(--muted);font-weight:700;font-size:11px}.divider{border:0;border-top:1px solid var(--border);margin:19px 0}.chip{border:1px solid #cbd7e6;padding:7px 11px;border-radius:99px;color:var(--navy);background:white;font-size:12px;font-weight:750}.chip.active{background:var(--navy);color:white;border-color:var(--navy)}.empty{background:#fff;padding:28px 16px;text-align:center;border-radius:13px;color:var(--muted)}.resultsflag{font-size:11px;color:#87550b}.footer{font-size:11px;color:var(--muted);line-height:1.6;margin-top:15px}.hide{display:none!important}.action-input{position:absolute;left:-9999px;width:1px;height:1px}.importstatus{font-size:12px;padding:10px 0;white-space:pre-wrap}.line{display:flex;gap:7px;align-items:center;justify-content:space-between}.spacer{height:8px}
+@media(max-width:730px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}header{padding-top:13px;padding-bottom:14px}.brand{font-size:16px}.emblem{width:40px;height:40px;font-size:21px}.switch button{padding:8px 11px;font-size:12px}main{padding:16px 11px 95px}.twocol{grid-template-columns:1fr}.card{padding:15px}.match{grid-template-columns:72px 1fr auto;gap:7px;padding:10px 8px}.teams{font-size:12px}.score{font-size:15px}.kpis{gap:7px}.kpi{padding:11px}.kpi strong{font-size:21px}.detail-grid{gap:6px}.mini strong{font-size:19px}.detail-grid .mini{padding:10px 7px}.standings th,.standings td{padding:11px 6px;font-size:11px}.standings th{font-size:10px}.standings th:nth-child(2),.standings td:nth-child(2){min-width:105px}}
+.venue-stat{display:grid;grid-template-columns:minmax(0,1fr) minmax(82px,auto) minmax(0,1fr);align-items:center;gap:16px;padding:6px 0}.venue-name{min-width:0}.venue-record{text-align:center;font-weight:800;white-space:nowrap;color:var(--navy)}.venue-averages{text-align:right;font-weight:750;white-space:nowrap}
+@media(max-width:520px){.venue-stat{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:7px;font-size:12px}.venue-name .subtle{font-size:10px}.venue-record{font-size:12px}.venue-averages{font-size:11px}}
+</style>
+</head>
+<body>
+<header><div class="head"><div class="logo"><span class="emblem">🏀</span><div class="brand">STELLA BASKET<small>MOBILE · STAGIONE 2026/27</small></div></div><div class="switch"><button id="u15" onclick="setCategory('U15')">U15</button><button id="u19" onclick="setCategory('U19')">U19</button></div></div></header>
+<main><div class="banner" id="dataNotice"></div><div id="page"></div></main>
+<nav class="tabs" aria-label="Menu principale"><button class="tab" data-page="home" onclick="go('home')"><span class="ico">⌂</span>Home</button><button class="tab" data-page="standings" onclick="go('standings')"><span class="ico">🏆</span>Classifica</button><button class="tab" data-page="teams" onclick="go('teams')"><span class="ico">🔎</span>Squadre</button><button class="tab" data-page="calendar" onclick="go('calendar')"><span class="ico">📅</span>Calendario</button></nav>
+<input class="action-input" id="fileImport" type="file" accept=".tsv,.txt,text/tab-separated-values,text/plain">
+<script>
+const initialData = {
+  "sourceDate": "2026-11-23",
+  "season": "2026/27",
+  "U15": [
+    {
+      "id": "006151",
+      "phase": "Andata",
+      "round": 1,
+      "roundDate": "2026-10-24",
+      "home": "TITANO RSM",
+      "away": "TIGERS VERUCCHIO",
+      "date": null,
+      "time": null,
+      "homeScore": 85,
+      "awayScore": 37,
+      "venue": null
+    },
+    {
+      "id": "006152",
+      "phase": "Andata",
+      "round": 1,
+      "roundDate": "2026-10-24",
+      "home": "CATTOLICA",
+      "away": "MORCIANO",
+      "date": null,
+      "time": null,
+      "homeScore": 92,
+      "awayScore": 60,
+      "venue": null
+    },
+    {
+      "id": "006153",
+      "phase": "Andata",
+      "round": 1,
+      "roundDate": "2026-10-24",
+      "home": "SANTARCANGELO",
+      "away": "STELLA",
+      "date": null,
+      "time": null,
+      "homeScore": 67,
+      "awayScore": 57,
+      "venue": null
+    },
+    {
+      "id": "006154",
+      "phase": "Andata",
+      "round": 1,
+      "roundDate": "2026-10-24",
+      "home": "BELLARIA",
+      "away": "SG TIBERIUS",
+      "date": null,
+      "time": null,
+      "homeScore": 96,
+      "awayScore": 27,
+      "venue": null
+    },
+    {
+      "id": "006155",
+      "phase": "Andata",
+      "round": 1,
+      "roundDate": "2026-10-24",
+      "home": "RICCIONE",
+      "away": "LIVIO NERI",
+      "date": null,
+      "time": null,
+      "homeScore": 52,
+      "awayScore": 31,
+      "venue": null
+    },
+    {
+      "id": "006156",
+      "phase": "Andata",
+      "round": 2,
+      "roundDate": "2026-10-31",
+      "home": "TITANO RSM",
+      "away": "SANTARCANGELO",
+      "date": null,
+      "time": null,
+      "homeScore": 55,
+      "awayScore": 34,
+      "venue": null
+    },
+    {
+      "id": "006157",
+      "phase": "Andata",
+      "round": 2,
+      "roundDate": "2026-10-31",
+      "home": "LIVIO NERI",
+      "away": "CATTOLICA",
+      "date": "2027-01-17",
+      "time": "15:45",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "MINI PALAZZETTO - Via Fausto Coppi 55 CESENA (FC)"
+    },
+    {
+      "id": "006158",
+      "phase": "Andata",
+      "round": 2,
+      "roundDate": "2026-10-31",
+      "home": "MORCIANO",
+      "away": "BELLARIA",
+      "date": null,
+      "time": null,
+      "homeScore": 47,
+      "awayScore": 78,
+      "venue": null
+    },
+    {
+      "id": "006159",
+      "phase": "Andata",
+      "round": 2,
+      "roundDate": "2026-10-31",
+      "home": "TIGERS VERUCCHIO",
+      "away": "RICCIONE",
+      "date": null,
+      "time": null,
+      "homeScore": 53,
+      "awayScore": 48,
+      "venue": null
+    },
+    {
+      "id": "006160",
+      "phase": "Andata",
+      "round": 2,
+      "roundDate": "2026-10-31",
+      "home": "SG TIBERIUS",
+      "away": "STELLA",
+      "date": null,
+      "time": null,
+      "homeScore": 36,
+      "awayScore": 71,
+      "venue": null
+    },
+    {
+      "id": "006161",
+      "phase": "Andata",
+      "round": 3,
+      "roundDate": "2026-11-07",
+      "home": "SG TIBERIUS",
+      "away": "RICCIONE",
+      "date": null,
+      "time": null,
+      "homeScore": 48,
+      "awayScore": 60,
+      "venue": null
+    },
+    {
+      "id": "006162",
+      "phase": "Andata",
+      "round": 3,
+      "roundDate": "2026-11-07",
+      "home": "SANTARCANGELO",
+      "away": "MORCIANO",
+      "date": null,
+      "time": null,
+      "homeScore": 46,
+      "awayScore": 49,
+      "venue": null
+    },
+    {
+      "id": "006163",
+      "phase": "Andata",
+      "round": 3,
+      "roundDate": "2026-11-07",
+      "home": "STELLA",
+      "away": "TITANO RSM",
+      "date": null,
+      "time": null,
+      "homeScore": 23,
+      "awayScore": 80,
+      "venue": null
+    },
+    {
+      "id": "006164",
+      "phase": "Andata",
+      "round": 3,
+      "roundDate": "2026-11-07",
+      "home": "BELLARIA",
+      "away": "LIVIO NERI",
+      "date": null,
+      "time": null,
+      "homeScore": 89,
+      "awayScore": 32,
+      "venue": null
+    },
+    {
+      "id": "006165",
+      "phase": "Andata",
+      "round": 3,
+      "roundDate": "2026-11-07",
+      "home": "CATTOLICA",
+      "away": "TIGERS VERUCCHIO",
+      "date": null,
+      "time": null,
+      "homeScore": 66,
+      "awayScore": 50,
+      "venue": null
+    },
+    {
+      "id": "006166",
+      "phase": "Andata",
+      "round": 4,
+      "roundDate": "2026-11-14",
+      "home": "TITANO RSM",
+      "away": "BELLARIA",
+      "date": null,
+      "time": null,
+      "homeScore": 68,
+      "awayScore": 53,
+      "venue": null
+    },
+    {
+      "id": "006167",
+      "phase": "Andata",
+      "round": 4,
+      "roundDate": "2026-11-14",
+      "home": "RICCIONE",
+      "away": "CATTOLICA",
+      "date": null,
+      "time": null,
+      "homeScore": 32,
+      "awayScore": 65,
+      "venue": null
+    },
+    {
+      "id": "006168",
+      "phase": "Andata",
+      "round": 4,
+      "roundDate": "2026-11-14",
+      "home": "LIVIO NERI",
+      "away": "STELLA",
+      "date": null,
+      "time": null,
+      "homeScore": 39,
+      "awayScore": 65,
+      "venue": null
+    },
+    {
+      "id": "006169",
+      "phase": "Andata",
+      "round": 4,
+      "roundDate": "2026-11-14",
+      "home": "TIGERS VERUCCHIO",
+      "away": "SANTARCANGELO",
+      "date": null,
+      "time": null,
+      "homeScore": 39,
+      "awayScore": 61,
+      "venue": null
+    },
+    {
+      "id": "006170",
+      "phase": "Andata",
+      "round": 4,
+      "roundDate": "2026-11-14",
+      "home": "MORCIANO",
+      "away": "SG TIBERIUS",
+      "date": null,
+      "time": null,
+      "homeScore": 75,
+      "awayScore": 59,
+      "venue": null
+    },
+    {
+      "id": "006171",
+      "phase": "Andata",
+      "round": 5,
+      "roundDate": "2026-11-21",
+      "home": "SANTARCANGELO",
+      "away": "LIVIO NERI",
+      "date": "2026-11-21",
+      "time": "16:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALA SGR - Via Della Resistenza 5 SANTARCANGELO DI ROMAGNA (RN)"
+    },
+    {
+      "id": "006172",
+      "phase": "Andata",
+      "round": 5,
+      "roundDate": "2026-11-21",
+      "home": "BELLARIA",
+      "away": "RICCIONE",
+      "date": "2026-11-24",
+      "time": "20:15",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STADIO - Via Rossini 12 BELLARIA-IGEA MARINA (RN)"
+    },
+    {
+      "id": "006173",
+      "phase": "Andata",
+      "round": 5,
+      "roundDate": "2026-11-21",
+      "home": "SG TIBERIUS",
+      "away": "TITANO RSM",
+      "date": "2026-11-21",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc.Elem. SFORZA - Via Briolini - Loc. S. Giulian RIMINI (RN)"
+    },
+    {
+      "id": "006174",
+      "phase": "Andata",
+      "round": 5,
+      "roundDate": "2026-11-21",
+      "home": "STELLA",
+      "away": "CATTOLICA",
+      "date": "2026-11-22",
+      "time": "10:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STELLA - VIA ABRUZZO, 36, RIMINI(RN), 4 RIMINI (RN)"
+    },
+    {
+      "id": "006175",
+      "phase": "Andata",
+      "round": 5,
+      "roundDate": "2026-11-21",
+      "home": "MORCIANO",
+      "away": "TIGERS VERUCCHIO",
+      "date": "2026-11-19",
+      "time": "19:20",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALAPEDRIALI - Via Spallicci 10 MORCIANO DI ROMAGNA (RN)"
+    },
+    {
+      "id": "006176",
+      "phase": "Andata",
+      "round": 6,
+      "roundDate": "2026-11-28",
+      "home": "CATTOLICA",
+      "away": "SANTARCANGELO",
+      "date": "2026-12-02",
+      "time": "17:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "C.S. SALVO D'ACQUISTO - Via S. D'Acquisto 2 CATTOLICA (RN)"
+    },
+    {
+      "id": "006177",
+      "phase": "Andata",
+      "round": 6,
+      "roundDate": "2026-11-28",
+      "home": "RICCIONE",
+      "away": "STELLA",
+      "date": "2026-11-29",
+      "time": "11:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "C.S. NICOLETTI - Via Forlimpopoli 15 RICCIONE (RN)"
+    },
+    {
+      "id": "006178",
+      "phase": "Andata",
+      "round": 6,
+      "roundDate": "2026-11-28",
+      "home": "LIVIO NERI",
+      "away": "SG TIBERIUS",
+      "date": "2026-11-28",
+      "time": "16:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "MINI PALAZZETTO - Via Fausto Coppi 55 CESENA (FC)"
+    },
+    {
+      "id": "006179",
+      "phase": "Andata",
+      "round": 6,
+      "roundDate": "2026-11-28",
+      "home": "TIGERS VERUCCHIO",
+      "away": "BELLARIA",
+      "date": "2026-11-28",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALESTRA - Via Don L.Sturzo - Loc. Villa VERUCCHIO (RN)"
+    },
+    {
+      "id": "006180",
+      "phase": "Andata",
+      "round": 6,
+      "roundDate": "2026-11-28",
+      "home": "TITANO RSM",
+      "away": "MORCIANO",
+      "date": "2026-11-28",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Pal. Sc.Elem. ACQUAVIVA - Via della Margheritina 1 - Acq SAN MARINO (RN)"
+    },
+    {
+      "id": "006181",
+      "phase": "Andata",
+      "round": 7,
+      "roundDate": "2026-12-05",
+      "home": "SG TIBERIUS",
+      "away": "TIGERS VERUCCHIO",
+      "date": "2026-12-06",
+      "time": "11:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc.Elem. SFORZA - Via Briolini - Loc. S. Giulian RIMINI (RN)"
+    },
+    {
+      "id": "006182",
+      "phase": "Andata",
+      "round": 7,
+      "roundDate": "2026-12-05",
+      "home": "SANTARCANGELO",
+      "away": "RICCIONE",
+      "date": "2026-12-05",
+      "time": "16:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALA SGR - Via Della Resistenza 5 SANTARCANGELO DI ROMAGNA (RN)"
+    },
+    {
+      "id": "006183",
+      "phase": "Andata",
+      "round": 7,
+      "roundDate": "2026-12-05",
+      "home": "TITANO RSM",
+      "away": "CATTOLICA",
+      "date": "2026-12-05",
+      "time": "16:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra U. BRIGANTI - Via Campo Dei Giudei - Fonte d SAN MARINO (RN)"
+    },
+    {
+      "id": "006184",
+      "phase": "Andata",
+      "round": 7,
+      "roundDate": "2026-12-05",
+      "home": "BELLARIA",
+      "away": "STELLA",
+      "date": "2026-12-05",
+      "time": "17:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STADIO - Via Rossini 12 BELLARIA-IGEA MARINA (RN)"
+    },
+    {
+      "id": "006185",
+      "phase": "Andata",
+      "round": 7,
+      "roundDate": "2026-12-05",
+      "home": "MORCIANO",
+      "away": "LIVIO NERI",
+      "date": "2026-12-03",
+      "time": "19:20",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALAPEDRIALI - Via Spallicci 10 MORCIANO DI ROMAGNA (RN)"
+    },
+    {
+      "id": "006186",
+      "phase": "Andata",
+      "round": 8,
+      "roundDate": "2026-12-12",
+      "home": "CATTOLICA",
+      "away": "BELLARIA",
+      "date": "2026-12-16",
+      "time": "17:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "C.S. SALVO D'ACQUISTO - Via S. D'Acquisto 2 CATTOLICA (RN)"
+    },
+    {
+      "id": "006187",
+      "phase": "Andata",
+      "round": 8,
+      "roundDate": "2026-12-12",
+      "home": "LIVIO NERI",
+      "away": "TIGERS VERUCCHIO",
+      "date": "2026-12-13",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "MINI PALAZZETTO - Via Fausto Coppi 55 CESENA (FC)"
+    },
+    {
+      "id": "006188",
+      "phase": "Andata",
+      "round": 8,
+      "roundDate": "2026-12-12",
+      "home": "STELLA",
+      "away": "MORCIANO",
+      "date": "2026-12-12",
+      "time": "16:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc. Media BERTOLA - Via Euterpe 16 RIMINI (RN)"
+    },
+    {
+      "id": "006189",
+      "phase": "Andata",
+      "round": 8,
+      "roundDate": "2026-12-12",
+      "home": "RICCIONE",
+      "away": "TITANO RSM",
+      "date": "2026-12-12",
+      "time": "16:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "C.S. NICOLETTI - Via Forlimpopoli 15 RICCIONE (RN)"
+    },
+    {
+      "id": "006190",
+      "phase": "Andata",
+      "round": 8,
+      "roundDate": "2026-12-12",
+      "home": "SANTARCANGELO",
+      "away": "SG TIBERIUS",
+      "date": "2026-12-12",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALA SGR - Via Della Resistenza 5 SANTARCANGELO DI ROMAGNA (RN)"
+    },
+    {
+      "id": "006191",
+      "phase": "Andata",
+      "round": 9,
+      "roundDate": "2026-12-19",
+      "home": "SG TIBERIUS",
+      "away": "CATTOLICA",
+      "date": "2026-12-19",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc.Elem. SFORZA - Via Briolini - Loc. S. Giulian RIMINI (RN)"
+    },
+    {
+      "id": "006192",
+      "phase": "Andata",
+      "round": 9,
+      "roundDate": "2026-12-19",
+      "home": "TIGERS VERUCCHIO",
+      "away": "STELLA",
+      "date": "2026-12-20",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALESTRA - Via Don L.Sturzo - Loc. Villa VERUCCHIO (RN)"
+    },
+    {
+      "id": "006193",
+      "phase": "Andata",
+      "round": 9,
+      "roundDate": "2026-12-19",
+      "home": "MORCIANO",
+      "away": "RICCIONE",
+      "date": "2026-12-18",
+      "time": "18:40",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALAPEDRIALI - Via Spallicci 10 MORCIANO DI ROMAGNA (RN)"
+    },
+    {
+      "id": "006194",
+      "phase": "Andata",
+      "round": 9,
+      "roundDate": "2026-12-19",
+      "home": "BELLARIA",
+      "away": "SANTARCANGELO",
+      "date": "2026-12-19",
+      "time": "17:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STADIO - Via Rossini 12 BELLARIA-IGEA MARINA (RN)"
+    },
+    {
+      "id": "006195",
+      "phase": "Andata",
+      "round": 9,
+      "roundDate": "2026-12-19",
+      "home": "TITANO RSM",
+      "away": "LIVIO NERI",
+      "date": "2026-12-19",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Pal. Sc.Elem. ACQUAVIVA - Via della Margheritina 1 - Acq SAN MARINO (RN)"
+    },
+    {
+      "id": "006196",
+      "phase": "Ritorno",
+      "round": 1,
+      "roundDate": "2027-01-09",
+      "home": "SG TIBERIUS",
+      "away": "BELLARIA",
+      "date": "2027-01-10",
+      "time": "11:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc.Elem. SFORZA - Via Briolini - Loc. S. Giulian RIMINI (RN)"
+    },
+    {
+      "id": "006197",
+      "phase": "Ritorno",
+      "round": 1,
+      "roundDate": "2027-01-09",
+      "home": "LIVIO NERI",
+      "away": "RICCIONE",
+      "date": "2027-01-10",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "MINI PALAZZETTO - Via Fausto Coppi 55 CESENA (FC)"
+    },
+    {
+      "id": "006198",
+      "phase": "Ritorno",
+      "round": 1,
+      "roundDate": "2027-01-09",
+      "home": "MORCIANO",
+      "away": "CATTOLICA",
+      "date": "2027-01-08",
+      "time": "18:40",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALAPEDRIALI - Via Spallicci 10 MORCIANO DI ROMAGNA (RN)"
+    },
+    {
+      "id": "006199",
+      "phase": "Ritorno",
+      "round": 1,
+      "roundDate": "2027-01-09",
+      "home": "TIGERS VERUCCHIO",
+      "away": "TITANO RSM",
+      "date": "2027-01-12",
+      "time": "18:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALESTRA - Via Don L.Sturzo - Loc. Villa VERUCCHIO (RN)"
+    },
+    {
+      "id": "006200",
+      "phase": "Ritorno",
+      "round": 1,
+      "roundDate": "2027-01-09",
+      "home": "STELLA",
+      "away": "SANTARCANGELO",
+      "date": "2027-01-09",
+      "time": "16:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STELLA - VIA ABRUZZO, 36, RIMINI(RN), 4 RIMINI (RN)"
+    },
+    {
+      "id": "006201",
+      "phase": "Ritorno",
+      "round": 2,
+      "roundDate": "2027-01-16",
+      "home": "BELLARIA",
+      "away": "MORCIANO",
+      "date": "2027-01-16",
+      "time": "17:15",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STADIO - Via Rossini 12 BELLARIA-IGEA MARINA (RN)"
+    },
+    {
+      "id": "006202",
+      "phase": "Ritorno",
+      "round": 2,
+      "roundDate": "2027-01-16",
+      "home": "STELLA",
+      "away": "SG TIBERIUS",
+      "date": "2027-01-18",
+      "time": "18:20",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STELLA - VIA ABRUZZO, 36, RIMINI(RN), 4 RIMINI (RN)"
+    },
+    {
+      "id": "006203",
+      "phase": "Ritorno",
+      "round": 2,
+      "roundDate": "2027-01-16",
+      "home": "RICCIONE",
+      "away": "TIGERS VERUCCHIO",
+      "date": "2027-01-16",
+      "time": "16:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "C.S. NICOLETTI - Via Forlimpopoli 15 RICCIONE (RN)"
+    },
+    {
+      "id": "006204",
+      "phase": "Ritorno",
+      "round": 2,
+      "roundDate": "2027-01-16",
+      "home": "SANTARCANGELO",
+      "away": "TITANO RSM",
+      "date": "2027-01-16",
+      "time": "16:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALA SGR - Via Della Resistenza 5 SANTARCANGELO DI ROMAGNA (RN)"
+    },
+    {
+      "id": "006205",
+      "phase": "Ritorno",
+      "round": 2,
+      "roundDate": "2027-01-16",
+      "home": "CATTOLICA",
+      "away": "LIVIO NERI",
+      "date": null,
+      "time": null,
+      "homeScore": 95,
+      "awayScore": 42,
+      "venue": null
+    },
+    {
+      "id": "006206",
+      "phase": "Ritorno",
+      "round": 3,
+      "roundDate": "2027-01-23",
+      "home": "MORCIANO",
+      "away": "SANTARCANGELO",
+      "date": "2027-01-21",
+      "time": "19:20",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALAPEDRIALI - Via Spallicci 10 MORCIANO DI ROMAGNA (RN)"
+    },
+    {
+      "id": "006207",
+      "phase": "Ritorno",
+      "round": 3,
+      "roundDate": "2027-01-23",
+      "home": "TIGERS VERUCCHIO",
+      "away": "CATTOLICA",
+      "date": "2027-01-24",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALESTRA - Via Don L.Sturzo - Loc. Villa VERUCCHIO (RN)"
+    },
+    {
+      "id": "006208",
+      "phase": "Ritorno",
+      "round": 3,
+      "roundDate": "2027-01-23",
+      "home": "TITANO RSM",
+      "away": "STELLA",
+      "date": "2027-01-23",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra U. BRIGANTI - Via Campo Dei Giudei - Fonte d SAN MARINO (RN)"
+    },
+    {
+      "id": "006209",
+      "phase": "Ritorno",
+      "round": 3,
+      "roundDate": "2027-01-23",
+      "home": "RICCIONE",
+      "away": "SG TIBERIUS",
+      "date": "2027-01-23",
+      "time": "16:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "C.S. NICOLETTI - Via Forlimpopoli 15 RICCIONE (RN)"
+    },
+    {
+      "id": "006210",
+      "phase": "Ritorno",
+      "round": 3,
+      "roundDate": "2027-01-23",
+      "home": "LIVIO NERI",
+      "away": "BELLARIA",
+      "date": "2027-01-24",
+      "time": "15:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "MINI PALAZZETTO - Via Fausto Coppi 55 CESENA (FC)"
+    },
+    {
+      "id": "006211",
+      "phase": "Ritorno",
+      "round": 4,
+      "roundDate": "2027-01-30",
+      "home": "SG TIBERIUS",
+      "away": "MORCIANO",
+      "date": "2027-02-02",
+      "time": "19:15",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc.Elem. SFORZA - Via Briolini - Loc. S. Giulian RIMINI (RN)"
+    },
+    {
+      "id": "006212",
+      "phase": "Ritorno",
+      "round": 4,
+      "roundDate": "2027-01-30",
+      "home": "BELLARIA",
+      "away": "TITANO RSM",
+      "date": "2027-01-31",
+      "time": "16:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STADIO - Via Rossini 12 BELLARIA-IGEA MARINA (RN)"
+    },
+    {
+      "id": "006213",
+      "phase": "Ritorno",
+      "round": 4,
+      "roundDate": "2027-01-30",
+      "home": "STELLA",
+      "away": "LIVIO NERI",
+      "date": "2027-01-30",
+      "time": "16:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc. Media BERTOLA - Via Euterpe 16 RIMINI (RN)"
+    },
+    {
+      "id": "006214",
+      "phase": "Ritorno",
+      "round": 4,
+      "roundDate": "2027-01-30",
+      "home": "SANTARCANGELO",
+      "away": "TIGERS VERUCCHIO",
+      "date": "2027-01-30",
+      "time": "16:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALA SGR - Via Della Resistenza 5 SANTARCANGELO DI ROMAGNA (RN)"
+    },
+    {
+      "id": "006215",
+      "phase": "Ritorno",
+      "round": 4,
+      "roundDate": "2027-01-30",
+      "home": "CATTOLICA",
+      "away": "RICCIONE",
+      "date": "2027-02-03",
+      "time": "17:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "C.S. SALVO D'ACQUISTO - Via S. D'Acquisto 2 CATTOLICA (RN)"
+    },
+    {
+      "id": "006216",
+      "phase": "Ritorno",
+      "round": 5,
+      "roundDate": "2027-02-06",
+      "home": "LIVIO NERI",
+      "away": "SANTARCANGELO",
+      "date": "2027-02-07",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "MINI PALAZZETTO - Via Fausto Coppi 55 CESENA (FC)"
+    },
+    {
+      "id": "006217",
+      "phase": "Ritorno",
+      "round": 5,
+      "roundDate": "2027-02-06",
+      "home": "TITANO RSM",
+      "away": "SG TIBERIUS",
+      "date": "2027-02-06",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Pal. Sc.Elem. ACQUAVIVA - Via della Margheritina 1 - Acq SAN MARINO (RN)"
+    },
+    {
+      "id": "006218",
+      "phase": "Ritorno",
+      "round": 5,
+      "roundDate": "2027-02-06",
+      "home": "RICCIONE",
+      "away": "BELLARIA",
+      "date": "2027-02-06",
+      "time": "16:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "C.S. NICOLETTI - Via Forlimpopoli 15 RICCIONE (RN)"
+    },
+    {
+      "id": "006219",
+      "phase": "Ritorno",
+      "round": 5,
+      "roundDate": "2027-02-06",
+      "home": "TIGERS VERUCCHIO",
+      "away": "MORCIANO",
+      "date": "2027-02-07",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALESTRA - Via Don L.Sturzo - Loc. Villa VERUCCHIO (RN)"
+    },
+    {
+      "id": "006220",
+      "phase": "Ritorno",
+      "round": 5,
+      "roundDate": "2027-02-06",
+      "home": "CATTOLICA",
+      "away": "STELLA",
+      "date": "2027-03-03",
+      "time": "17:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "C.S. SALVO D'ACQUISTO - Via S. D'Acquisto 2 CATTOLICA (RN)"
+    },
+    {
+      "id": "006221",
+      "phase": "Ritorno",
+      "round": 6,
+      "roundDate": "2027-02-13",
+      "home": "BELLARIA",
+      "away": "TIGERS VERUCCHIO",
+      "date": "2027-02-14",
+      "time": "11:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STADIO - Via Rossini 12 BELLARIA-IGEA MARINA (RN)"
+    },
+    {
+      "id": "006222",
+      "phase": "Ritorno",
+      "round": 6,
+      "roundDate": "2027-02-13",
+      "home": "SG TIBERIUS",
+      "away": "LIVIO NERI",
+      "date": "2027-02-13",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc.Elem. SFORZA - Via Briolini - Loc. S. Giulian RIMINI (RN)"
+    },
+    {
+      "id": "006223",
+      "phase": "Ritorno",
+      "round": 6,
+      "roundDate": "2027-02-13",
+      "home": "STELLA",
+      "away": "RICCIONE",
+      "date": "2027-02-13",
+      "time": "16:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc. Media BERTOLA - Via Euterpe 16 RIMINI (RN)"
+    },
+    {
+      "id": "006224",
+      "phase": "Ritorno",
+      "round": 6,
+      "roundDate": "2027-02-13",
+      "home": "SANTARCANGELO",
+      "away": "CATTOLICA",
+      "date": "2027-02-13",
+      "time": "16:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALA SGR - Via Della Resistenza 5 SANTARCANGELO DI ROMAGNA (RN)"
+    },
+    {
+      "id": "006225",
+      "phase": "Ritorno",
+      "round": 6,
+      "roundDate": "2027-02-13",
+      "home": "MORCIANO",
+      "away": "TITANO RSM",
+      "date": "2027-02-11",
+      "time": "19:20",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALAPEDRIALI - Via Spallicci 10 MORCIANO DI ROMAGNA (RN)"
+    },
+    {
+      "id": "006226",
+      "phase": "Ritorno",
+      "round": 7,
+      "roundDate": "2027-02-20",
+      "home": "STELLA",
+      "away": "BELLARIA",
+      "date": "2027-02-20",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STELLA - VIA ABRUZZO, 36, RIMINI(RN), 4 RIMINI (RN)"
+    },
+    {
+      "id": "006227",
+      "phase": "Ritorno",
+      "round": 7,
+      "roundDate": "2027-02-20",
+      "home": "TIGERS VERUCCHIO",
+      "away": "SG TIBERIUS",
+      "date": "2027-02-21",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALESTRA - Via Don L.Sturzo - Loc. Villa VERUCCHIO (RN)"
+    },
+    {
+      "id": "006228",
+      "phase": "Ritorno",
+      "round": 7,
+      "roundDate": "2027-02-20",
+      "home": "RICCIONE",
+      "away": "SANTARCANGELO",
+      "date": "2027-02-20",
+      "time": "16:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "C.S. NICOLETTI - Via Forlimpopoli 15 RICCIONE (RN)"
+    },
+    {
+      "id": "006229",
+      "phase": "Ritorno",
+      "round": 7,
+      "roundDate": "2027-02-20",
+      "home": "LIVIO NERI",
+      "away": "MORCIANO",
+      "date": "2027-02-21",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "MINI PALAZZETTO - Via Fausto Coppi 55 CESENA (FC)"
+    },
+    {
+      "id": "006230",
+      "phase": "Ritorno",
+      "round": 7,
+      "roundDate": "2027-02-20",
+      "home": "CATTOLICA",
+      "away": "TITANO RSM",
+      "date": "2027-02-24",
+      "time": "17:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "C.S. SALVO D'ACQUISTO - Via S. D'Acquisto 2 CATTOLICA (RN)"
+    },
+    {
+      "id": "006231",
+      "phase": "Ritorno",
+      "round": 8,
+      "roundDate": "2027-02-27",
+      "home": "SG TIBERIUS",
+      "away": "SANTARCANGELO",
+      "date": "2027-02-27",
+      "time": "19:45",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc.Elem. SFORZA - Via Briolini - Loc. S. Giulian RIMINI (RN)"
+    },
+    {
+      "id": "006232",
+      "phase": "Ritorno",
+      "round": 8,
+      "roundDate": "2027-02-27",
+      "home": "BELLARIA",
+      "away": "CATTOLICA",
+      "date": "2027-02-27",
+      "time": "17:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STADIO - Via Rossini 12 BELLARIA-IGEA MARINA (RN)"
+    },
+    {
+      "id": "006233",
+      "phase": "Ritorno",
+      "round": 8,
+      "roundDate": "2027-02-27",
+      "home": "TITANO RSM",
+      "away": "RICCIONE",
+      "date": "2027-02-27",
+      "time": "17:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Pal. Sc.Elem. ACQUAVIVA - Via della Margheritina 1 - Acq SAN MARINO (RN)"
+    },
+    {
+      "id": "006234",
+      "phase": "Ritorno",
+      "round": 8,
+      "roundDate": "2027-02-27",
+      "home": "MORCIANO",
+      "away": "STELLA",
+      "date": "2027-02-27",
+      "time": "16:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALAPEDRIALI - Via Spallicci 10 MORCIANO DI ROMAGNA (RN)"
+    },
+    {
+      "id": "006235",
+      "phase": "Ritorno",
+      "round": 8,
+      "roundDate": "2027-02-27",
+      "home": "TIGERS VERUCCHIO",
+      "away": "LIVIO NERI",
+      "date": "2027-02-27",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALESTRA - Via Don L.Sturzo - Loc. Villa VERUCCHIO (RN)"
+    },
+    {
+      "id": "006236",
+      "phase": "Ritorno",
+      "round": 9,
+      "roundDate": "2027-03-06",
+      "home": "LIVIO NERI",
+      "away": "TITANO RSM",
+      "date": "2027-03-07",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "MINI PALAZZETTO - Via Fausto Coppi 55 CESENA (FC)"
+    },
+    {
+      "id": "006237",
+      "phase": "Ritorno",
+      "round": 9,
+      "roundDate": "2027-03-06",
+      "home": "CATTOLICA",
+      "away": "SG TIBERIUS",
+      "date": "2027-03-10",
+      "time": "17:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "C.S. SALVO D'ACQUISTO - Via S. D'Acquisto 2 CATTOLICA (RN)"
+    },
+    {
+      "id": "006238",
+      "phase": "Ritorno",
+      "round": 9,
+      "roundDate": "2027-03-06",
+      "home": "SANTARCANGELO",
+      "away": "BELLARIA",
+      "date": "2027-03-07",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALA SGR - Via Della Resistenza 5 SANTARCANGELO DI ROMAGNA (RN)"
+    },
+    {
+      "id": "006239",
+      "phase": "Ritorno",
+      "round": 9,
+      "roundDate": "2027-03-06",
+      "home": "RICCIONE",
+      "away": "MORCIANO",
+      "date": "2027-03-06",
+      "time": "16:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "C.S. NICOLETTI - Via Forlimpopoli 15 RICCIONE (RN)"
+    },
+    {
+      "id": "006240",
+      "phase": "Ritorno",
+      "round": 9,
+      "roundDate": "2027-03-06",
+      "home": "STELLA",
+      "away": "TIGERS VERUCCHIO",
+      "date": "2027-03-06",
+      "time": "16:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STELLA - VIA ABRUZZO, 36, RIMINI(RN), 4 RIMINI (RN)"
+    }
+  ],
+  "U19": [
+    {
+      "id": "004625",
+      "phase": "Andata",
+      "round": 1,
+      "roundDate": "2026-10-24",
+      "home": "TITANO RSM",
+      "away": "BASKERS FORLIMPOPOLI",
+      "date": null,
+      "time": null,
+      "homeScore": 74,
+      "awayScore": 54,
+      "venue": null
+    },
+    {
+      "id": "004626",
+      "phase": "Andata",
+      "round": 1,
+      "roundDate": "2026-10-24",
+      "home": "STELLA",
+      "away": "LIVIO NERI",
+      "date": null,
+      "time": null,
+      "homeScore": 56,
+      "awayScore": 70,
+      "venue": null
+    },
+    {
+      "id": "004627",
+      "phase": "Andata",
+      "round": 1,
+      "roundDate": "2026-10-24",
+      "home": "MISANO",
+      "away": "BELLARIA",
+      "date": null,
+      "time": null,
+      "homeScore": 69,
+      "awayScore": 68,
+      "venue": null
+    },
+    {
+      "id": "004628",
+      "phase": "Andata",
+      "round": 1,
+      "roundDate": "2026-10-24",
+      "home": "CESENA 2005",
+      "away": "RICCIONE",
+      "date": null,
+      "time": null,
+      "homeScore": 66,
+      "awayScore": 79,
+      "venue": null
+    },
+    {
+      "id": "004629",
+      "phase": "Andata",
+      "round": 1,
+      "roundDate": "2026-10-24",
+      "home": "TIGERS VERUCCHIO",
+      "away": "GAETANO SCIREA",
+      "date": null,
+      "time": null,
+      "homeScore": 48,
+      "awayScore": 55,
+      "venue": null
+    },
+    {
+      "id": "004630",
+      "phase": "Andata",
+      "round": 2,
+      "roundDate": "2026-10-31",
+      "home": "BELLARIA",
+      "away": "TITANO RSM",
+      "date": null,
+      "time": null,
+      "homeScore": 56,
+      "awayScore": 73,
+      "venue": null
+    },
+    {
+      "id": "004631",
+      "phase": "Andata",
+      "round": 2,
+      "roundDate": "2026-10-31",
+      "home": "SG TIBERIUS",
+      "away": "TIGERS VERUCCHIO",
+      "date": null,
+      "time": null,
+      "homeScore": 69,
+      "awayScore": 39,
+      "venue": null
+    },
+    {
+      "id": "004632",
+      "phase": "Andata",
+      "round": 2,
+      "roundDate": "2026-10-31",
+      "home": "GAETANO SCIREA",
+      "away": "MISANO",
+      "date": null,
+      "time": null,
+      "homeScore": 51,
+      "awayScore": 63,
+      "venue": null
+    },
+    {
+      "id": "004633",
+      "phase": "Andata",
+      "round": 2,
+      "roundDate": "2026-10-31",
+      "home": "RICCIONE",
+      "away": "LIVIO NERI",
+      "date": null,
+      "time": null,
+      "homeScore": 90,
+      "awayScore": 40,
+      "venue": null
+    },
+    {
+      "id": "004634",
+      "phase": "Andata",
+      "round": 2,
+      "roundDate": "2026-10-31",
+      "home": "BASKERS FORLIMPOPOLI",
+      "away": "CESENA 2005",
+      "date": null,
+      "time": null,
+      "homeScore": 61,
+      "awayScore": 50,
+      "venue": null
+    },
+    {
+      "id": "004635",
+      "phase": "Andata",
+      "round": 3,
+      "roundDate": "2026-11-07",
+      "home": "TITANO RSM",
+      "away": "SG TIBERIUS",
+      "date": null,
+      "time": null,
+      "homeScore": 74,
+      "awayScore": 47,
+      "venue": null
+    },
+    {
+      "id": "004636",
+      "phase": "Andata",
+      "round": 3,
+      "roundDate": "2026-11-07",
+      "home": "STELLA",
+      "away": "RICCIONE",
+      "date": null,
+      "time": null,
+      "homeScore": 43,
+      "awayScore": 93,
+      "venue": null
+    },
+    {
+      "id": "004637",
+      "phase": "Andata",
+      "round": 3,
+      "roundDate": "2026-11-07",
+      "home": "LIVIO NERI",
+      "away": "GAETANO SCIREA",
+      "date": null,
+      "time": null,
+      "homeScore": 55,
+      "awayScore": 60,
+      "venue": null
+    },
+    {
+      "id": "004638",
+      "phase": "Andata",
+      "round": 3,
+      "roundDate": "2026-11-07",
+      "home": "CESENA 2005",
+      "away": "BELLARIA",
+      "date": null,
+      "time": null,
+      "homeScore": 80,
+      "awayScore": 76,
+      "venue": null
+    },
+    {
+      "id": "004639",
+      "phase": "Andata",
+      "round": 3,
+      "roundDate": "2026-11-07",
+      "home": "MISANO",
+      "away": "TIGERS VERUCCHIO",
+      "date": null,
+      "time": null,
+      "homeScore": 66,
+      "awayScore": 41,
+      "venue": null
+    },
+    {
+      "id": "004640",
+      "phase": "Andata",
+      "round": 4,
+      "roundDate": "2026-11-14",
+      "home": "SG TIBERIUS",
+      "away": "LIVIO NERI",
+      "date": null,
+      "time": null,
+      "homeScore": 50,
+      "awayScore": 36,
+      "venue": null
+    },
+    {
+      "id": "004641",
+      "phase": "Andata",
+      "round": 4,
+      "roundDate": "2026-11-14",
+      "home": "GAETANO SCIREA",
+      "away": "TITANO RSM",
+      "date": null,
+      "time": null,
+      "homeScore": 58,
+      "awayScore": 76,
+      "venue": null
+    },
+    {
+      "id": "004642",
+      "phase": "Andata",
+      "round": 4,
+      "roundDate": "2026-11-14",
+      "home": "RICCIONE",
+      "away": "BASKERS FORLIMPOPOLI",
+      "date": null,
+      "time": null,
+      "homeScore": 70,
+      "awayScore": 68,
+      "venue": null
+    },
+    {
+      "id": "004643",
+      "phase": "Andata",
+      "round": 4,
+      "roundDate": "2026-11-14",
+      "home": "TIGERS VERUCCHIO",
+      "away": "CESENA 2005",
+      "date": null,
+      "time": null,
+      "homeScore": 57,
+      "awayScore": 71,
+      "venue": null
+    },
+    {
+      "id": "004644",
+      "phase": "Andata",
+      "round": 4,
+      "roundDate": "2026-11-14",
+      "home": "BELLARIA",
+      "away": "STELLA",
+      "date": null,
+      "time": null,
+      "homeScore": 81,
+      "awayScore": 58,
+      "venue": null
+    },
+    {
+      "id": "004645",
+      "phase": "Andata",
+      "round": 5,
+      "roundDate": "2026-11-21",
+      "home": "STELLA",
+      "away": "GAETANO SCIREA",
+      "date": "2026-11-23",
+      "time": "20:15",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STELLA - VIA ABRUZZO, 36, RIMINI(RN), 4 RIMINI (RN)"
+    },
+    {
+      "id": "004646",
+      "phase": "Andata",
+      "round": 5,
+      "roundDate": "2026-11-21",
+      "home": "BASKERS FORLIMPOPOLI",
+      "away": "SG TIBERIUS",
+      "date": "2026-11-21",
+      "time": "19:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALADIMENSIONE VENDING - Via del Tulipano 11 FORLIMPOPOLI (FC)"
+    },
+    {
+      "id": "004647",
+      "phase": "Andata",
+      "round": 5,
+      "roundDate": "2026-11-21",
+      "home": "BELLARIA",
+      "away": "TIGERS VERUCCHIO",
+      "date": "2026-11-19",
+      "time": "20:15",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STADIO - Via Rossini 12 BELLARIA-IGEA MARINA (RN)"
+    },
+    {
+      "id": "004648",
+      "phase": "Andata",
+      "round": 5,
+      "roundDate": "2026-11-21",
+      "home": "TITANO RSM",
+      "away": "RICCIONE",
+      "date": "2026-11-21",
+      "time": "17:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra U. BRIGANTI - Via Campo Dei Giudei - Fonte d SAN MARINO (RN)"
+    },
+    {
+      "id": "004649",
+      "phase": "Andata",
+      "round": 5,
+      "roundDate": "2026-11-21",
+      "home": "LIVIO NERI",
+      "away": "MISANO",
+      "date": "2026-11-24",
+      "time": "20:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Pal. Sc. Media ODDO BIASINI - Via S. Giorgio 3042 - Fraz. Sa CESENA (FC)"
+    },
+    {
+      "id": "004650",
+      "phase": "Andata",
+      "round": 6,
+      "roundDate": "2026-11-28",
+      "home": "MISANO",
+      "away": "TITANO RSM",
+      "date": "2026-11-30",
+      "time": "21:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestre Polivalente Misano Ad - Via Giuseppe Verdi, 8 MISANO ADRIATICO (RN)"
+    },
+    {
+      "id": "004651",
+      "phase": "Andata",
+      "round": 6,
+      "roundDate": "2026-11-28",
+      "home": "TIGERS VERUCCHIO",
+      "away": "BASKERS FORLIMPOPOLI",
+      "date": "2026-11-28",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALESTRA - Via Don L.Sturzo - Loc. Villa VERUCCHIO (RN)"
+    },
+    {
+      "id": "004652",
+      "phase": "Andata",
+      "round": 6,
+      "roundDate": "2026-11-28",
+      "home": "GAETANO SCIREA",
+      "away": "BELLARIA",
+      "date": "2026-11-29",
+      "time": "16:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra POLIVALENTE - Via Colombarone 375 BERTINORO (FC)"
+    },
+    {
+      "id": "004653",
+      "phase": "Andata",
+      "round": 6,
+      "roundDate": "2026-11-28",
+      "home": "SG TIBERIUS",
+      "away": "STELLA",
+      "date": "2026-11-28",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc.Elem. SFORZA - Via Briolini - Loc. S. Giulian RIMINI (RN)"
+    },
+    {
+      "id": "004654",
+      "phase": "Andata",
+      "round": 6,
+      "roundDate": "2026-11-28",
+      "home": "LIVIO NERI",
+      "away": "CESENA 2005",
+      "date": "2026-12-01",
+      "time": "20:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Pal. Sc. Media ODDO BIASINI - Via S. Giorgio 3042 - Fraz. Sa CESENA (FC)"
+    },
+    {
+      "id": "004655",
+      "phase": "Andata",
+      "round": 7,
+      "roundDate": "2026-12-05",
+      "home": "TITANO RSM",
+      "away": "LIVIO NERI",
+      "date": "2026-12-10",
+      "time": "19:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "MULTIEVENTI SPORT DOMUS - Via Rancaglia 30 RIMINI (RN)"
+    },
+    {
+      "id": "004656",
+      "phase": "Andata",
+      "round": 7,
+      "roundDate": "2026-12-05",
+      "home": "BASKERS FORLIMPOPOLI",
+      "away": "STELLA",
+      "date": "2026-12-04",
+      "time": "19:50",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALADIMENSIONE VENDING - Via del Tulipano 11 FORLIMPOPOLI (FC)"
+    },
+    {
+      "id": "004657",
+      "phase": "Andata",
+      "round": 7,
+      "roundDate": "2026-12-05",
+      "home": "CESENA 2005",
+      "away": "MISANO",
+      "date": "2026-12-09",
+      "time": "19:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra IPPODROMO - Via G. Di Vittorio CESENA (FC)"
+    },
+    {
+      "id": "004658",
+      "phase": "Andata",
+      "round": 7,
+      "roundDate": "2026-12-05",
+      "home": "BELLARIA",
+      "away": "SG TIBERIUS",
+      "date": "2026-12-01",
+      "time": "20:15",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STADIO - Via Rossini 12 BELLARIA-IGEA MARINA (RN)"
+    },
+    {
+      "id": "004659",
+      "phase": "Andata",
+      "round": 7,
+      "roundDate": "2026-12-05",
+      "home": "RICCIONE",
+      "away": "GAETANO SCIREA",
+      "date": "2026-12-07",
+      "time": "18:45",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra FONTANELLE - Via Capri 8 RICCIONE (RN)"
+    },
+    {
+      "id": "004660",
+      "phase": "Andata",
+      "round": 8,
+      "roundDate": "2026-12-12",
+      "home": "SG TIBERIUS",
+      "away": "CESENA 2005",
+      "date": "2026-12-15",
+      "time": "21:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc.Elem. SFORZA - Via Briolini - Loc. S. Giulian RIMINI (RN)"
+    },
+    {
+      "id": "004661",
+      "phase": "Andata",
+      "round": 8,
+      "roundDate": "2026-12-12",
+      "home": "LIVIO NERI",
+      "away": "BELLARIA",
+      "date": "2026-12-15",
+      "time": "20:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Pal. Sc. Media ODDO BIASINI - Via S. Giorgio 3042 - Fraz. Sa CESENA (FC)"
+    },
+    {
+      "id": "004662",
+      "phase": "Andata",
+      "round": 8,
+      "roundDate": "2026-12-12",
+      "home": "STELLA",
+      "away": "TIGERS VERUCCHIO",
+      "date": "2026-12-12",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc. Media BERTOLA - Via Euterpe 16 RIMINI (RN)"
+    },
+    {
+      "id": "004663",
+      "phase": "Andata",
+      "round": 8,
+      "roundDate": "2026-12-12",
+      "home": "GAETANO SCIREA",
+      "away": "BASKERS FORLIMPOPOLI",
+      "date": "2026-12-11",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra POLIVALENTE - Via Colombarone 375 BERTINORO (FC)"
+    },
+    {
+      "id": "004664",
+      "phase": "Andata",
+      "round": 8,
+      "roundDate": "2026-12-12",
+      "home": "MISANO",
+      "away": "RICCIONE",
+      "date": "2026-12-11",
+      "time": "21:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestre Polivalente Misano Ad - Via Giuseppe Verdi, 8 MISANO ADRIATICO (RN)"
+    },
+    {
+      "id": "004665",
+      "phase": "Andata",
+      "round": 9,
+      "roundDate": "2026-12-19",
+      "home": "RICCIONE",
+      "away": "SG TIBERIUS",
+      "date": "2026-12-21",
+      "time": "18:45",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra FONTANELLE - Via Capri 8 RICCIONE (RN)"
+    },
+    {
+      "id": "004666",
+      "phase": "Andata",
+      "round": 9,
+      "roundDate": "2026-12-19",
+      "home": "MISANO",
+      "away": "STELLA",
+      "date": "2026-12-18",
+      "time": "21:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestre Polivalente Misano Ad - Via Giuseppe Verdi, 8 MISANO ADRIATICO (RN)"
+    },
+    {
+      "id": "004667",
+      "phase": "Andata",
+      "round": 9,
+      "roundDate": "2026-12-19",
+      "home": "CESENA 2005",
+      "away": "TITANO RSM",
+      "date": "2026-12-20",
+      "time": "15:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra IPPODROMO - Via G. Di Vittorio CESENA (FC)"
+    },
+    {
+      "id": "004668",
+      "phase": "Andata",
+      "round": 9,
+      "roundDate": "2026-12-19",
+      "home": "TIGERS VERUCCHIO",
+      "away": "LIVIO NERI",
+      "date": "2026-12-22",
+      "time": "21:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALESTRA - Via Don L.Sturzo - Loc. Villa VERUCCHIO (RN)"
+    },
+    {
+      "id": "004669",
+      "phase": "Andata",
+      "round": 9,
+      "roundDate": "2026-12-19",
+      "home": "BELLARIA",
+      "away": "BASKERS FORLIMPOPOLI",
+      "date": "2026-12-22",
+      "time": "20:15",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STADIO - Via Rossini 12 BELLARIA-IGEA MARINA (RN)"
+    },
+    {
+      "id": "004670",
+      "phase": "Andata",
+      "round": 10,
+      "roundDate": "2027-01-09",
+      "home": "STELLA",
+      "away": "CESENA 2005",
+      "date": "2027-01-09",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STELLA - VIA ABRUZZO, 36, RIMINI(RN), 4 RIMINI (RN)"
+    },
+    {
+      "id": "004671",
+      "phase": "Andata",
+      "round": 10,
+      "roundDate": "2027-01-09",
+      "home": "BELLARIA",
+      "away": "RICCIONE",
+      "date": "2027-01-12",
+      "time": "20:15",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STADIO - Via Rossini 12 BELLARIA-IGEA MARINA (RN)"
+    },
+    {
+      "id": "004672",
+      "phase": "Andata",
+      "round": 10,
+      "roundDate": "2027-01-09",
+      "home": "SG TIBERIUS",
+      "away": "GAETANO SCIREA",
+      "date": "2027-01-12",
+      "time": "21:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc.Elem. SFORZA - Via Briolini - Loc. S. Giulian RIMINI (RN)"
+    },
+    {
+      "id": "004673",
+      "phase": "Andata",
+      "round": 10,
+      "roundDate": "2027-01-09",
+      "home": "TITANO RSM",
+      "away": "TIGERS VERUCCHIO",
+      "date": "2027-01-11",
+      "time": "19:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Pal. Sc.Elem. ACQUAVIVA - Via della Margheritina 1 - Acq SAN MARINO (RN)"
+    },
+    {
+      "id": "004674",
+      "phase": "Andata",
+      "round": 10,
+      "roundDate": "2027-01-09",
+      "home": "BASKERS FORLIMPOPOLI",
+      "away": "MISANO",
+      "date": "2027-01-08",
+      "time": "19:50",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALADIMENSIONE VENDING - Via del Tulipano 11 FORLIMPOPOLI (FC)"
+    },
+    {
+      "id": "004675",
+      "phase": "Andata",
+      "round": 11,
+      "roundDate": "2027-01-16",
+      "home": "LIVIO NERI",
+      "away": "BASKERS FORLIMPOPOLI",
+      "date": "2027-01-19",
+      "time": "20:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Pal. Sc. Media ODDO BIASINI - Via S. Giorgio 3042 - Fraz. Sa CESENA (FC)"
+    },
+    {
+      "id": "004676",
+      "phase": "Andata",
+      "round": 11,
+      "roundDate": "2027-01-16",
+      "home": "CESENA 2005",
+      "away": "GAETANO SCIREA",
+      "date": "2027-01-16",
+      "time": "19:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra IPPODROMO - Via G. Di Vittorio CESENA (FC)"
+    },
+    {
+      "id": "004677",
+      "phase": "Andata",
+      "round": 11,
+      "roundDate": "2027-01-16",
+      "home": "MISANO",
+      "away": "SG TIBERIUS",
+      "date": "2027-01-15",
+      "time": "21:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestre Polivalente Misano Ad - Via Giuseppe Verdi, 8 MISANO ADRIATICO (RN)"
+    },
+    {
+      "id": "004678",
+      "phase": "Andata",
+      "round": 11,
+      "roundDate": "2027-01-16",
+      "home": "TIGERS VERUCCHIO",
+      "away": "RICCIONE",
+      "date": "2027-01-16",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALESTRA - Via Don L.Sturzo - Loc. Villa VERUCCHIO (RN)"
+    },
+    {
+      "id": "004679",
+      "phase": "Andata",
+      "round": 11,
+      "roundDate": "2027-01-16",
+      "home": "TITANO RSM",
+      "away": "STELLA",
+      "date": "2027-01-16",
+      "time": "16:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Pal. Sc.Elem. ACQUAVIVA - Via della Margheritina 1 - Acq SAN MARINO (RN)"
+    },
+    {
+      "id": "004680",
+      "phase": "Ritorno",
+      "round": 1,
+      "roundDate": "2027-01-23",
+      "home": "BELLARIA",
+      "away": "MISANO",
+      "date": "2027-01-21",
+      "time": "20:15",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STADIO - Via Rossini 12 BELLARIA-IGEA MARINA (RN)"
+    },
+    {
+      "id": "004681",
+      "phase": "Ritorno",
+      "round": 1,
+      "roundDate": "2027-01-23",
+      "home": "LIVIO NERI",
+      "away": "STELLA",
+      "date": "2027-01-26",
+      "time": "20:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Pal. Sc. Media ODDO BIASINI - Via S. Giorgio 3042 - Fraz. Sa CESENA (FC)"
+    },
+    {
+      "id": "004682",
+      "phase": "Ritorno",
+      "round": 1,
+      "roundDate": "2027-01-23",
+      "home": "GAETANO SCIREA",
+      "away": "TIGERS VERUCCHIO",
+      "date": "2027-01-21",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra POLIVALENTE - Via Colombarone 375 BERTINORO (FC)"
+    },
+    {
+      "id": "004683",
+      "phase": "Ritorno",
+      "round": 1,
+      "roundDate": "2027-01-23",
+      "home": "BASKERS FORLIMPOPOLI",
+      "away": "TITANO RSM",
+      "date": "2027-01-22",
+      "time": "19:50",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALADIMENSIONE VENDING - Via del Tulipano 11 FORLIMPOPOLI (FC)"
+    },
+    {
+      "id": "004684",
+      "phase": "Ritorno",
+      "round": 1,
+      "roundDate": "2027-01-23",
+      "home": "RICCIONE",
+      "away": "CESENA 2005",
+      "date": "2027-01-25",
+      "time": "18:45",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra FONTANELLE - Via Capri 8 RICCIONE (RN)"
+    },
+    {
+      "id": "004685",
+      "phase": "Ritorno",
+      "round": 2,
+      "roundDate": "2027-01-30",
+      "home": "TITANO RSM",
+      "away": "BELLARIA",
+      "date": "2027-01-28",
+      "time": "19:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "MULTIEVENTI SPORT DOMUS - Via Rancaglia 30 RIMINI (RN)"
+    },
+    {
+      "id": "004686",
+      "phase": "Ritorno",
+      "round": 2,
+      "roundDate": "2027-01-30",
+      "home": "TIGERS VERUCCHIO",
+      "away": "SG TIBERIUS",
+      "date": "2027-01-30",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALESTRA - Via Don L.Sturzo - Loc. Villa VERUCCHIO (RN)"
+    },
+    {
+      "id": "004687",
+      "phase": "Ritorno",
+      "round": 2,
+      "roundDate": "2027-01-30",
+      "home": "MISANO",
+      "away": "GAETANO SCIREA",
+      "date": "2027-02-01",
+      "time": "21:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestre Polivalente Misano Ad - Via Giuseppe Verdi, 8 MISANO ADRIATICO (RN)"
+    },
+    {
+      "id": "004688",
+      "phase": "Ritorno",
+      "round": 2,
+      "roundDate": "2027-01-30",
+      "home": "CESENA 2005",
+      "away": "BASKERS FORLIMPOPOLI",
+      "date": "2027-01-30",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra IPPODROMO - Via G. Di Vittorio CESENA (FC)"
+    },
+    {
+      "id": "004689",
+      "phase": "Ritorno",
+      "round": 2,
+      "roundDate": "2027-01-30",
+      "home": "LIVIO NERI",
+      "away": "RICCIONE",
+      "date": "2027-02-02",
+      "time": "20:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Pal. Sc. Media ODDO BIASINI - Via S. Giorgio 3042 - Fraz. Sa CESENA (FC)"
+    },
+    {
+      "id": "004690",
+      "phase": "Ritorno",
+      "round": 3,
+      "roundDate": "2027-02-06",
+      "home": "SG TIBERIUS",
+      "away": "TITANO RSM",
+      "date": "2027-02-06",
+      "time": "15:50",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc.Elem. SFORZA - Via Briolini - Loc. S. Giulian RIMINI (RN)"
+    },
+    {
+      "id": "004691",
+      "phase": "Ritorno",
+      "round": 3,
+      "roundDate": "2027-02-06",
+      "home": "GAETANO SCIREA",
+      "away": "LIVIO NERI",
+      "date": "2027-02-04",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra POLIVALENTE - Via Colombarone 375 BERTINORO (FC)"
+    },
+    {
+      "id": "004692",
+      "phase": "Ritorno",
+      "round": 3,
+      "roundDate": "2027-02-06",
+      "home": "RICCIONE",
+      "away": "STELLA",
+      "date": "2027-02-08",
+      "time": "18:45",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra FONTANELLE - Via Capri 8 RICCIONE (RN)"
+    },
+    {
+      "id": "004693",
+      "phase": "Ritorno",
+      "round": 3,
+      "roundDate": "2027-02-06",
+      "home": "BELLARIA",
+      "away": "CESENA 2005",
+      "date": "2027-02-07",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STADIO - Via Rossini 12 BELLARIA-IGEA MARINA (RN)"
+    },
+    {
+      "id": "004694",
+      "phase": "Ritorno",
+      "round": 3,
+      "roundDate": "2027-02-06",
+      "home": "TIGERS VERUCCHIO",
+      "away": "MISANO",
+      "date": "2027-02-06",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALESTRA - Via Don L.Sturzo - Loc. Villa VERUCCHIO (RN)"
+    },
+    {
+      "id": "004695",
+      "phase": "Ritorno",
+      "round": 4,
+      "roundDate": "2027-02-13",
+      "home": "CESENA 2005",
+      "away": "TIGERS VERUCCHIO",
+      "date": "2027-02-14",
+      "time": "11:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra IPPODROMO - Via G. Di Vittorio CESENA (FC)"
+    },
+    {
+      "id": "004696",
+      "phase": "Ritorno",
+      "round": 4,
+      "roundDate": "2027-02-13",
+      "home": "BASKERS FORLIMPOPOLI",
+      "away": "RICCIONE",
+      "date": "2027-02-12",
+      "time": "19:50",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALADIMENSIONE VENDING - Via del Tulipano 11 FORLIMPOPOLI (FC)"
+    },
+    {
+      "id": "004697",
+      "phase": "Ritorno",
+      "round": 4,
+      "roundDate": "2027-02-13",
+      "home": "STELLA",
+      "away": "BELLARIA",
+      "date": "2027-02-13",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc. Media BERTOLA - Via Euterpe 16 RIMINI (RN)"
+    },
+    {
+      "id": "004698",
+      "phase": "Ritorno",
+      "round": 4,
+      "roundDate": "2027-02-13",
+      "home": "LIVIO NERI",
+      "away": "SG TIBERIUS",
+      "date": "2027-02-16",
+      "time": "20:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Pal. Sc. Media ODDO BIASINI - Via S. Giorgio 3042 - Fraz. Sa CESENA (FC)"
+    },
+    {
+      "id": "004699",
+      "phase": "Ritorno",
+      "round": 4,
+      "roundDate": "2027-02-13",
+      "home": "TITANO RSM",
+      "away": "GAETANO SCIREA",
+      "date": "2027-02-09",
+      "time": "19:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "MULTIEVENTI SPORT DOMUS - Via Rancaglia 30 RIMINI (RN)"
+    },
+    {
+      "id": "004700",
+      "phase": "Ritorno",
+      "round": 5,
+      "roundDate": "2027-02-20",
+      "home": "GAETANO SCIREA",
+      "away": "STELLA",
+      "date": "2027-02-19",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra POLIVALENTE - Via Colombarone 375 BERTINORO (FC)"
+    },
+    {
+      "id": "004701",
+      "phase": "Ritorno",
+      "round": 5,
+      "roundDate": "2027-02-20",
+      "home": "RICCIONE",
+      "away": "TITANO RSM",
+      "date": "2027-02-24",
+      "time": "18:45",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra FONTANELLE - Via Capri 8 RICCIONE (RN)"
+    },
+    {
+      "id": "004702",
+      "phase": "Ritorno",
+      "round": 5,
+      "roundDate": "2027-02-20",
+      "home": "MISANO",
+      "away": "LIVIO NERI",
+      "date": "2027-02-18",
+      "time": "21:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestre Polivalente Misano Ad - Via Giuseppe Verdi, 8 MISANO ADRIATICO (RN)"
+    },
+    {
+      "id": "004703",
+      "phase": "Ritorno",
+      "round": 5,
+      "roundDate": "2027-02-20",
+      "home": "TIGERS VERUCCHIO",
+      "away": "BELLARIA",
+      "date": "2027-02-21",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALESTRA - Via Don L.Sturzo - Loc. Villa VERUCCHIO (RN)"
+    },
+    {
+      "id": "004704",
+      "phase": "Ritorno",
+      "round": 5,
+      "roundDate": "2027-02-20",
+      "home": "SG TIBERIUS",
+      "away": "BASKERS FORLIMPOPOLI",
+      "date": "2027-02-22",
+      "time": "20:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc. Media BERTOLA - Via Euterpe 16 RIMINI (RN)"
+    },
+    {
+      "id": "004705",
+      "phase": "Ritorno",
+      "round": 6,
+      "roundDate": "2027-02-27",
+      "home": "CESENA 2005",
+      "away": "LIVIO NERI",
+      "date": "2027-02-28",
+      "time": "15:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra IPPODROMO - Via G. Di Vittorio CESENA (FC)"
+    },
+    {
+      "id": "004706",
+      "phase": "Ritorno",
+      "round": 6,
+      "roundDate": "2027-02-27",
+      "home": "BASKERS FORLIMPOPOLI",
+      "away": "TIGERS VERUCCHIO",
+      "date": "2027-02-24",
+      "time": "19:50",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALADIMENSIONE VENDING - Via del Tulipano 11 FORLIMPOPOLI (FC)"
+    },
+    {
+      "id": "004707",
+      "phase": "Ritorno",
+      "round": 6,
+      "roundDate": "2027-02-27",
+      "home": "STELLA",
+      "away": "SG TIBERIUS",
+      "date": "2027-03-01",
+      "time": "20:15",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STELLA - VIA ABRUZZO, 36, RIMINI(RN), 4 RIMINI (RN)"
+    },
+    {
+      "id": "004708",
+      "phase": "Ritorno",
+      "round": 6,
+      "roundDate": "2027-02-27",
+      "home": "TITANO RSM",
+      "away": "MISANO",
+      "date": "2027-02-27",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "MULTIEVENTI SPORT DOMUS - Via Rancaglia 30 RIMINI (RN)"
+    },
+    {
+      "id": "004709",
+      "phase": "Ritorno",
+      "round": 6,
+      "roundDate": "2027-02-27",
+      "home": "BELLARIA",
+      "away": "GAETANO SCIREA",
+      "date": "2027-02-25",
+      "time": "20:15",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STADIO - Via Rossini 12 BELLARIA-IGEA MARINA (RN)"
+    },
+    {
+      "id": "004710",
+      "phase": "Ritorno",
+      "round": 7,
+      "roundDate": "2027-03-06",
+      "home": "STELLA",
+      "away": "BASKERS FORLIMPOPOLI",
+      "date": "2027-03-06",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STELLA - VIA ABRUZZO, 36, RIMINI(RN), 4 RIMINI (RN)"
+    },
+    {
+      "id": "004711",
+      "phase": "Ritorno",
+      "round": 7,
+      "roundDate": "2027-03-06",
+      "home": "SG TIBERIUS",
+      "away": "BELLARIA",
+      "date": "2027-03-06",
+      "time": "15:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc.Elem. SFORZA - Via Briolini - Loc. S. Giulian RIMINI (RN)"
+    },
+    {
+      "id": "004712",
+      "phase": "Ritorno",
+      "round": 7,
+      "roundDate": "2027-03-06",
+      "home": "GAETANO SCIREA",
+      "away": "RICCIONE",
+      "date": "2027-03-05",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra POLIVALENTE - Via Colombarone 375 BERTINORO (FC)"
+    },
+    {
+      "id": "004713",
+      "phase": "Ritorno",
+      "round": 7,
+      "roundDate": "2027-03-06",
+      "home": "LIVIO NERI",
+      "away": "TITANO RSM",
+      "date": "2027-03-09",
+      "time": "20:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Pal. Sc. Media ODDO BIASINI - Via S. Giorgio 3042 - Fraz. Sa CESENA (FC)"
+    },
+    {
+      "id": "004714",
+      "phase": "Ritorno",
+      "round": 7,
+      "roundDate": "2027-03-06",
+      "home": "MISANO",
+      "away": "CESENA 2005",
+      "date": "2027-03-05",
+      "time": "21:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestre Polivalente Misano Ad - Via Giuseppe Verdi, 8 MISANO ADRIATICO (RN)"
+    },
+    {
+      "id": "004715",
+      "phase": "Ritorno",
+      "round": 8,
+      "roundDate": "2027-03-13",
+      "home": "BELLARIA",
+      "away": "LIVIO NERI",
+      "date": "2027-03-11",
+      "time": "20:15",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STADIO - Via Rossini 12 BELLARIA-IGEA MARINA (RN)"
+    },
+    {
+      "id": "004716",
+      "phase": "Ritorno",
+      "round": 8,
+      "roundDate": "2027-03-13",
+      "home": "BASKERS FORLIMPOPOLI",
+      "away": "GAETANO SCIREA",
+      "date": "2027-03-12",
+      "time": "19:50",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALADIMENSIONE VENDING - Via del Tulipano 11 FORLIMPOPOLI (FC)"
+    },
+    {
+      "id": "004717",
+      "phase": "Ritorno",
+      "round": 8,
+      "roundDate": "2027-03-13",
+      "home": "TIGERS VERUCCHIO",
+      "away": "STELLA",
+      "date": "2027-03-16",
+      "time": "21:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALESTRA - Via Don L.Sturzo - Loc. Villa VERUCCHIO (RN)"
+    },
+    {
+      "id": "004718",
+      "phase": "Ritorno",
+      "round": 8,
+      "roundDate": "2027-03-13",
+      "home": "CESENA 2005",
+      "away": "SG TIBERIUS",
+      "date": "2027-03-14",
+      "time": "15:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra IPPODROMO - Via G. Di Vittorio CESENA (FC)"
+    },
+    {
+      "id": "004719",
+      "phase": "Ritorno",
+      "round": 8,
+      "roundDate": "2027-03-13",
+      "home": "RICCIONE",
+      "away": "MISANO",
+      "date": "2027-03-15",
+      "time": "18:45",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra FONTANELLE - Via Capri 8 RICCIONE (RN)"
+    },
+    {
+      "id": "004720",
+      "phase": "Ritorno",
+      "round": 9,
+      "roundDate": "2027-03-20",
+      "home": "LIVIO NERI",
+      "away": "TIGERS VERUCCHIO",
+      "date": "2027-03-23",
+      "time": "20:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Pal. Sc. Media ODDO BIASINI - Via S. Giorgio 3042 - Fraz. Sa CESENA (FC)"
+    },
+    {
+      "id": "004721",
+      "phase": "Ritorno",
+      "round": 9,
+      "roundDate": "2027-03-20",
+      "home": "SG TIBERIUS",
+      "away": "RICCIONE",
+      "date": "2027-03-20",
+      "time": "15:50",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc.Elem. SFORZA - Via Briolini - Loc. S. Giulian RIMINI (RN)"
+    },
+    {
+      "id": "004722",
+      "phase": "Ritorno",
+      "round": 9,
+      "roundDate": "2027-03-20",
+      "home": "TITANO RSM",
+      "away": "CESENA 2005",
+      "date": "2027-03-22",
+      "time": "19:30",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Pal. Sc.Elem. ACQUAVIVA - Via della Margheritina 1 - Acq SAN MARINO (RN)"
+    },
+    {
+      "id": "004723",
+      "phase": "Ritorno",
+      "round": 9,
+      "roundDate": "2027-03-20",
+      "home": "STELLA",
+      "away": "MISANO",
+      "date": "2027-03-20",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STELLA - VIA ABRUZZO, 36, RIMINI(RN), 4 RIMINI (RN)"
+    },
+    {
+      "id": "004724",
+      "phase": "Ritorno",
+      "round": 9,
+      "roundDate": "2027-03-20",
+      "home": "BASKERS FORLIMPOPOLI",
+      "away": "BELLARIA",
+      "date": "2027-03-17",
+      "time": "19:50",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALADIMENSIONE VENDING - Via del Tulipano 11 FORLIMPOPOLI (FC)"
+    },
+    {
+      "id": "004725",
+      "phase": "Ritorno",
+      "round": 10,
+      "roundDate": "2027-04-03",
+      "home": "MISANO",
+      "away": "BASKERS FORLIMPOPOLI",
+      "date": "2027-04-02",
+      "time": "21:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestre Polivalente Misano Ad - Via Giuseppe Verdi, 8 MISANO ADRIATICO (RN)"
+    },
+    {
+      "id": "004726",
+      "phase": "Ritorno",
+      "round": 10,
+      "roundDate": "2027-04-03",
+      "home": "TIGERS VERUCCHIO",
+      "away": "TITANO RSM",
+      "date": "2027-04-03",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALESTRA - Via Don L.Sturzo - Loc. Villa VERUCCHIO (RN)"
+    },
+    {
+      "id": "004727",
+      "phase": "Ritorno",
+      "round": 10,
+      "roundDate": "2027-04-03",
+      "home": "RICCIONE",
+      "away": "BELLARIA",
+      "date": "2027-03-31",
+      "time": "18:45",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra FONTANELLE - Via Capri 8 RICCIONE (RN)"
+    },
+    {
+      "id": "004728",
+      "phase": "Ritorno",
+      "round": 10,
+      "roundDate": "2027-04-03",
+      "home": "GAETANO SCIREA",
+      "away": "SG TIBERIUS",
+      "date": "2027-04-04",
+      "time": "16:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra POLIVALENTE - Via Colombarone 375 BERTINORO (FC)"
+    },
+    {
+      "id": "004729",
+      "phase": "Ritorno",
+      "round": 10,
+      "roundDate": "2027-04-03",
+      "home": "CESENA 2005",
+      "away": "STELLA",
+      "date": "2027-04-04",
+      "time": "15:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra IPPODROMO - Via G. Di Vittorio CESENA (FC)"
+    },
+    {
+      "id": "004730",
+      "phase": "Ritorno",
+      "round": 11,
+      "roundDate": "2027-04-10",
+      "home": "SG TIBERIUS",
+      "away": "MISANO",
+      "date": "2027-04-10",
+      "time": "15:50",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra Sc.Elem. SFORZA - Via Briolini - Loc. S. Giulian RIMINI (RN)"
+    },
+    {
+      "id": "004731",
+      "phase": "Ritorno",
+      "round": 11,
+      "roundDate": "2027-04-10",
+      "home": "RICCIONE",
+      "away": "TIGERS VERUCCHIO",
+      "date": "2027-04-14",
+      "time": "18:45",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra FONTANELLE - Via Capri 8 RICCIONE (RN)"
+    },
+    {
+      "id": "004732",
+      "phase": "Ritorno",
+      "round": 11,
+      "roundDate": "2027-04-10",
+      "home": "BASKERS FORLIMPOPOLI",
+      "away": "LIVIO NERI",
+      "date": "2027-04-09",
+      "time": "19:50",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "PALADIMENSIONE VENDING - Via del Tulipano 11 FORLIMPOPOLI (FC)"
+    },
+    {
+      "id": "004733",
+      "phase": "Ritorno",
+      "round": 11,
+      "roundDate": "2027-04-10",
+      "home": "GAETANO SCIREA",
+      "away": "CESENA 2005",
+      "date": "2027-04-09",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra POLIVALENTE - Via Colombarone 375 BERTINORO (FC)"
+    },
+    {
+      "id": "004734",
+      "phase": "Ritorno",
+      "round": 11,
+      "roundDate": "2027-04-10",
+      "home": "STELLA",
+      "away": "TITANO RSM",
+      "date": "2027-04-10",
+      "time": "18:00",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Palestra STELLA - VIA ABRUZZO, 36, RIMINI(RN), 4 RIMINI (RN)"
+    }
+  ]
+};
+const KEY='stella_mobile_2026_27_local_v1';
+// Dati pubblici in sola lettura: Foglio Google STELLA_CLOUD_DATI_PUBBLICI_2026_27.
+const SHEETS={
+ U15:'./dati/u15.csv',
+ U19:'./dati/u19.csv'
+};
+let cloudStatus='',cloudLastSync='',cloudReady=false,cloudBusy=false;
+
+let data=structuredCloneSafe(initialData),cat='U19',page='home',selectedTeam='STELLA',matchFilter='all',matchQuery='',tableTeam='all';
+function structuredCloneSafe(x){return JSON.parse(JSON.stringify(x))}
+try{const saved=JSON.parse(localStorage.getItem(KEY));if(saved && saved.U15?.length===90&&saved.U19?.length===110)data=saved}catch(e){}
+function esc(x){return String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function played(x){return Number.isInteger(x.homeScore)&&Number.isInteger(x.awayScore)}
+function today(){const d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')}
+function datelabel(s){if(!s)return 'Data da verificare';const [y,m,d]=s.split('-');return d+'/'+m+'/'+y}
+function shortdate(s){if(!s)return '—';const [y,m,d]=s.split('-');return d+'/'+m}
+function meetDate(x){return x.date||x.roundDate||'9999-12-31'}
+function teamNames(){return [...new Set(data[cat].flatMap(x=>[x.home,x.away]))].sort((a,b)=>a.localeCompare(b,'it'))}
+function relevant(x,t){return x.home===t||x.away===t}
+function scoreFor(x,t){return x.home===t?[x.homeScore,x.awayScore]:[x.awayScore,x.homeScore]}
+function standings(){const vals=teamNames().map(t=>{let games=data[cat].filter(x=>played(x)&&relevant(x,t)),wins=0,losses=0,pf=0,pa=0;games.forEach(x=>{const [f,a]=scoreFor(x,t);pf+=f;pa+=a;if(f>a)wins++;else if(f<a)losses++});return {t,gp:games.length,w:wins,l:losses,pf,pa,pts:wins*2,avgF:games.length?pf/games.length:null,avgA:games.length?pa/games.length:null,diff:pf-pa}});vals.sort((a,b)=>b.pts-a.pts||b.diff-a.diff||b.pf-a.pf||a.t.localeCompare(b.t,'it'));return vals.map((x,i)=>({...x,pos:i+1}))}
+function number(x){return x==null?'—':x.toLocaleString('it-IT',{minimumFractionDigits:1,maximumFractionDigits:1})}
+function matchCard(x){const done=played(x);const status=done?'Finale':meetDate(x)<today()?'Risultato mancante':meetDate(x)===today()?'Oggi · da giocare':'Da giocare';return `<div class="match ${relevant(x,'STELLA')?'stella':''}"><div class="when"><b>${shortdate(meetDate(x))}</b>${esc(x.time||'')}<br><span class="muted">#${esc(x.id)}</span></div><div class="teams">${esc(x.home)} <span class="vs">–</span> ${esc(x.away)}<div class="subtle">${esc(x.phase)} · G${x.round}</div></div><div class="score">${done?esc(x.homeScore+' : '+x.awayScore):'—'}<small>${esc(status)}</small></div></div>`}
+function scheduleSort(a,b){return meetDate(a).localeCompare(meetDate(b))||(a.time||'').localeCompare(b.time||'')||a.id.localeCompare(b.id)}
+function setCategory(c){cat=c;selectedTeam='STELLA';matchFilter='all';matchQuery='';tableTeam='all';render()}
+function go(p){page=p;render();window.scrollTo({top:0,behavior:'smooth'})}
+function selectTeam(t){selectedTeam=t;page='teams';render();window.scrollTo({top:0,behavior:'smooth'})}
+function setTeam(v){selectedTeam=v;render()}
+function setMatchFilter(v){matchFilter=v;render()}
+function setTableTeam(v){tableTeam=v;render()}
+function setQuery(v){matchQuery=v;render(false);const el=document.getElementById('query');if(el){el.focus();el.setSelectionRange(v.length,v.length)}}
+function timeRow(x){return `${datelabel(meetDate(x))}${x.time?' · '+esc(x.time):''}`}
+function homepage(){const all=data[cat],complete=all.filter(played),pending=all.filter(x=>!played(x)&&relevant(x,'STELLA')).sort(scheduleSort),future=pending.filter(x=>meetDate(x)>=today()),overdue=pending.filter(x=>meetDate(x)<today());const focus=future[0]||pending[0];let output=`<h1 class="section-title">La tua squadra · ${cat}</h1>`;
+ output+=focus?`<div class="card hero"><div class="row"><div class="eyebrow">${meetDate(focus)===today()?'Partita di oggi':future.length?'Prossima partita':'Gara con risultato in attesa'}</div><span class="tag">${meetDate(focus)<today()?'DA AGGIORNARE':meetDate(focus)===today()?'OGGI':'DA GIOCARE'}</span></div><div class="big-match">${esc(focus.home)}<br><span style="color:var(--yellow)">vs</span> ${esc(focus.away)}</div><div class="hero-info">📅 ${timeRow(focus)}<br>🏟 ${esc(focus.venue||'Palestra non indicata')}<br>Gara FIP ${esc(focus.id)}</div></div>`:`<div class="card">Non ci sono partite della Stella senza risultato nei dati disponibili.</div>`;
+ const s=standings().find(x=>x.t==='STELLA');output+=`<div class="spacer"></div><div class="kpis"><div class="card kpi"><strong>${s?.pos??'—'}°</strong><span>Posizione calcolata</span></div><div class="card kpi"><strong>${s?.w??0}–${s?.l??0}</strong><span>Vittorie / sconfitte</span></div><div class="card kpi pf"><strong>${number(s?.avgF)}</strong><span>Media punti fatti</span></div><div class="card kpi ps"><strong>${number(s?.avgA)}</strong><span>Media punti subiti</span></div></div>`;
+ if(overdue.length)output+=`<div class="spacer"></div><div class="warn"><b>⚠ ${overdue.length} ${overdue.length===1?'gara Stella':'gare Stella'} con data trascorsa e risultato mancante.</b><br>Non sono considerate giocate. La prossima gara futura resta visibile sopra.${overdue.slice(0,3).map(x=>`<div style="margin-top:5px">${shortdate(meetDate(x))} · ${esc(x.home)} – ${esc(x.away)}</div>`).join('')}</div>`;
+ output+=`<div class="spacer"></div><div class="twocol"><section class="card"><div class="row"><h2 class="small-title">Ultimi risultati ${cat}</h2><button class="chip" onclick="go('calendar')">Tutti</button></div><div class="list">${complete.slice().sort((a,b)=>meetDate(b).localeCompare(meetDate(a))||b.id.localeCompare(a.id)).slice(0,5).map(matchCard).join('')||'<div class="empty">Nessun risultato.</div>'}</div></section><section class="card"><h2 class="small-title">Analisi avversari</h2><p class="subtle">Cerca una squadra e controlla posizione, tutte le gare disputate, media punti fatti e subiti.</p><button class="pillbtn" onclick="go('teams')">🔎 Apri schede squadre</button><hr class="divider"><div class="row"><span class="subtle">Risultati disponibili</span><b>${complete.length}/${all.length}</b></div></section></div>`;return output}
+function standingsPage(){const ss=standings();return `<h1 class="section-title">Classifica ${cat}</h1><div class="banner">Classifica <b>calcolata</b> dai risultati presenti: 2 punti per vittoria, 0 per sconfitta. A parità di punti, ordinamento provvisorio per differenza canestri (non criteri ufficiali FIP). Penalizzazioni e provvedimenti non inclusi.</div><div class="tablewrap"><table class="standings"><thead><tr><th>#</th><th>Squadra</th><th>PG</th><th>V</th><th>P</th><th>Pt</th><th>PF</th><th>PS</th><th>Diff.</th></tr></thead><tbody>${ss.map(s=>`<tr class="${s.t==='STELLA'?'stella':''}"><td>${s.pos}</td><td onclick="selectTeam('${esc(s.t)}')" title="Apri scheda squadra">${esc(s.t)} ›</td><td>${s.gp}</td><td>${s.w}</td><td>${s.l}</td><td><b>${s.pts}</b></td><td>${s.pf}</td><td>${s.pa}</td><td>${s.diff>0?'+':''}${s.diff}</td></tr>`).join('')}</tbody></table></div><p class="footer">Clicca sul nome di una squadra per aprire le statistiche complete. Sono conteggiate solo le gare per cui sono disponibili entrambi i punteggi, anche quando la data della giornata è futura a causa di anticipi o inversioni di calendario.</p>`}
+function teamsPage(){const ss=standings(),s=ss.find(s=>s.t===selectedTeam)||ss[0];if(!s)return '';const team=s.t;let matches=data[cat].filter(x=>relevant(x,team)).slice().sort(scheduleSort);const performed=matches.filter(played).sort((a,b)=>meetDate(b).localeCompare(meetDate(a)));const scheduled=matches.filter(x=>!played(x));function side(loc){let g=performed.filter(x=>(loc==='home'?x.home===team:x.away===team));let pf=0,ps=0,w=0,l=0;for(const x of g){let [a,b]=scoreFor(x,team);pf+=a;ps+=b;if(a>b)w++;else if(a<b)l++}return {g:g.length,w,l,pf:g.length?pf/g.length:null,ps:g.length?ps/g.length:null}}const home=side('home'),away=side('away');return `<h1 class="section-title">Scheda squadra · ${cat}</h1><div class="card"><div class="eyebrow">Scegli una squadra</div><select class="field" style="margin-top:8px" onchange="setTeam(this.value)">${teamNames().map(t=>`<option value="${esc(t)}" ${team===t?'selected':''}>${esc(t)}</option>`).join('')}</select><h2 style="margin:18px 0 8px;color:var(--navy)">${esc(team)}</h2><div class="detail-grid"><div class="mini"><strong>${s.pos}°</strong><span>Posizione</span></div><div class="mini"><strong>${s.pts}</strong><span>Punti classifica*</span></div><div class="mini"><strong>${s.gp}</strong><span>Partite giocate</span></div><div class="mini"><strong>${s.w}–${s.l}</strong><span>Vittorie / sconfitte</span></div><div class="mini"><strong>${number(s.avgF)}</strong><span>Media punti fatti</span></div><div class="mini"><strong>${number(s.avgA)}</strong><span>Media punti subiti</span></div></div><div class="spacer"></div><div class="row"><div class="subtle">Totale PF <b>${s.pf}</b> · PS <b>${s.pa}</b></div><div class="tag">Differenza ${s.diff>0?'+':''}${s.diff}</div></div><hr class="divider"><h3 class="small-title">Rendimento casa / trasferta</h3><div class="venue-stat"><div class="venue-name">🏠 Casa <span class="subtle">(${home.g} gare)</span></div><div class="venue-record">${home.w} V / ${home.l} P</div><div class="venue-averages">${number(home.pf)} PF · ${number(home.ps)} PS</div></div><div class="spacer"></div><div class="venue-stat"><div class="venue-name">🚌 Trasferta <span class="subtle">(${away.g} gare)</span></div><div class="venue-record">${away.w} V / ${away.l} P</div><div class="venue-averages">${number(away.pf)} PF · ${number(away.ps)} PS</div></div><p class="footer">* Classifica calcolata, non ufficiale FIP. Le medie sono basate solo sui risultati disponibili.</p></div><div class="spacer"></div><section class="card"><h2 class="small-title">Risultati di ${esc(team)} (${performed.length})</h2><div class="list">${performed.map(matchCard).join('')||'<div class="empty">Nessun risultato registrato.</div>'}</div></section><div class="spacer"></div><section class="card"><h2 class="small-title">Gare da giocare o da aggiornare (${scheduled.length})</h2><div class="list">${scheduled.map(matchCard).join('')||'<div class="empty">Nessuna gara senza risultato.</div>'}</div></section>`}
+function calendarPage(){let games=data[cat].slice().sort(scheduleSort);if(tableTeam!=='all')games=games.filter(x=>relevant(x,tableTeam));if(matchFilter==='done')games=games.filter(played);if(matchFilter==='pending')games=games.filter(x=>!played(x));const query=matchQuery.trim().toLocaleLowerCase('it');if(query)games=games.filter(x=>([x.home,x.away,x.id,x.venue].join(' ').toLocaleLowerCase('it')).includes(query));return `<h1 class="section-title">Calendario e risultati · ${cat}</h1><div class="controls"><select class="field" onchange="setTableTeam(this.value)"><option value="all">Tutte le squadre</option>${teamNames().map(t=>`<option value="${esc(t)}" ${tableTeam===t?'selected':''}>${esc(t)}</option>`).join('')}</select><input class="field" style="flex:1;max-width:360px" id="query" placeholder="Cerca squadra, numero gara, palestra" value="${esc(matchQuery)}" oninput="setQuery(this.value)"></div><div class="controls"><button class="chip ${matchFilter==='all'?'active':''}" onclick="setMatchFilter('all')">Tutte</button><button class="chip ${matchFilter==='done'?'active':''}" onclick="setMatchFilter('done')">Giocate</button><button class="chip ${matchFilter==='pending'?'active':''}" onclick="setMatchFilter('pending')">Senza risultato</button><span class="subtle" style="align-self:center">${games.length} gare</span></div><div class="list">${games.map(matchCard).join('')||'<div class="empty">Nessuna gara con i filtri selezionati.</div>'}</div>`}
+function render(){document.getElementById('u15').classList.toggle('active',cat==='U15');document.getElementById('u19').classList.toggle('active',cat==='U19');document.querySelectorAll('[data-page]').forEach(x=>x.classList.toggle('active',x.dataset.page===page));const ct=data[cat].filter(played).length;document.getElementById('dataNotice').innerHTML=`<b>${cloudReady?'☁️ Calendari pubblicati online':'📦 Dati locali (copia di partenza / ultimo aggiornamento)'}</b> · ${cat}: ${ct} risultati su ${data[cat].length} gare.${cloudReady?' Ultimo controllo locale: '+esc(cloudLastSync)+'.':' Il collegamento online viene verificato all’apertura.'}<div class="act" style="margin:8px 0 0"><button class="chip" onclick="refreshCloud()" ${cloudBusy?'disabled':''}>↻ Ricarica calendari online</button><button class="chip" onclick="document.getElementById('fileImport').click()">📂 Importa TSV locale</button><button class="chip" onclick="resetData()">Ripristina dati iniziali</button></div><div id="cloudstatus" class="importstatus" style="margin-top:8px;color:${cloudReady?'#087a4d':'#31577f'}">${esc(cloudStatus|| 'Se l’aggiornamento online non riesce, restano visibili i dati già salvati.')}</div><div id="importstatus" class="importstatus hide"></div>`;
+ document.getElementById('page').innerHTML=page==='home'?homepage():page==='standings'?standingsPage():page==='teams'?teamsPage():calendarPage();}
+function resetData(){if(!confirm('Ripristinare i dati iniziali di entrambe le categorie? Gli aggiornamenti importati su questo dispositivo andranno persi.'))return;data=structuredCloneSafe(initialData);try{localStorage.removeItem(KEY)}catch(e){}render()}
+function showImport(msg,good){const el=document.getElementById('importstatus');el.classList.remove('hide');el.style.color=good?'#087a4d':'#b62c39';el.textContent=msg}
+function parseTSV(content){let lines=content.replace(/^\uFEFF/,'').replace(/\r/g,'').split('\n').filter(x=>x.trim());const head=lines.shift().split('\t');if(head.length!==3||head[0]!=='STELLA_FIP')throw new Error('Intestazione TSV non riconosciuta');const category=head[1],expected=category==='U15'?90:category==='U19'?110:null;if(!expected||Number(head[2])!==expected||lines.length!==expected)throw new Error('Categoria o numero gare non corretto');let map=new Map();for(let line of lines){const f=line.split('\t');if(f.length!==7||!/^[0-9]{6}$/.test(f[0])||map.has(f[0]))throw new Error('Numero gara duplicato o riga non valida');map.set(f[0],f)}let copy=structuredCloneSafe(data[category]);if(copy.some(x=>!map.has(x.id)))throw new Error('Il TSV non corrisponde ai numeri gara del calendario');for(let x of copy){let f=map.get(x.id),type=f[3];if(type==='RISULTATO') {if(!/^\d{1,3}$/.test(f[4])||!/^\d{1,3}$/.test(f[5]))throw new Error('Punteggio non valido: '+x.id);x.homeScore=Number(f[4]);x.awayScore=Number(f[5])}else if(type==='PROGRAMMATA'){if(played(x))throw new Error('La gara '+x.id+' ha già un risultato nei dati salvati: importazione bloccata');if(!/^\d{2}\/\d{2}\/\d{2}$/.test(f[4])||!/^\d{2}:\d{2}$/.test(f[5]))throw new Error('Data/ora non valide: '+x.id);const [d,m,y]=f[4].split('/');x.date='20'+y+'-'+m+'-'+d;x.time=f[5];x.venue=f[6]||x.venue}else throw new Error('Stato non valido: '+x.id)}return {category,copy}}
+
+// Legge i CSV pubblicati sul web (sola lettura). Nessuna modifica ai Fogli Google.
+// Parsing RFC 4180: supporta virgole nei nomi delle palestre e celle tra virgolette.
+function parseCSV(csv){
+ const result=[];let row=[],value='',quoted=false;
+ csv=csv.replace(/^\uFEFF/,'');
+ for(let i=0;i<csv.length;i++){
+  const c=csv[i];
+  if(quoted){if(c==='"'&&csv[i+1]==='"'){value+='"';i++}else if(c==='"'){quoted=false}else{value+=c}}
+  else if(c==='"'){quoted=true}
+  else if(c===','){row.push(value);value=''}
+  else if(c==='\n'||c==='\r'){if(c==='\r'&&csv[i+1]==='\n')i++;row.push(value);if(row.some(v=>v!==''))result.push(row);row=[];value=''}
+  else{value+=c}
+ }
+ if(quoted)throw Error('CSV incompleto: virgolette non chiuse');
+ if(value!==''||row.length){row.push(value);if(row.some(v=>v!==''))result.push(row)}
+ return result;
+}
+function scoreOrNull(v){
+ v=String(v||'').trim();
+ if(!v)return null;
+ if(!/^\d{1,3}$/.test(v))throw Error('Punteggio non numerico');
+ return Number(v);
+}
+function normalizeISO(v){
+ v=String(v||'').trim();if(!v)return '';
+ if(/^\d{4}-\d{2}-\d{2}$/.test(v))return v;
+ const d=v.match(/^(\d{1,2})[\/.-](\d{1,2})[\/.-](\d{4})$/);
+ if(d)return d[3]+'-'+d[2].padStart(2,'0')+'-'+d[1].padStart(2,'0');
+ throw Error('Data non riconosciuta: '+v);
+}
+function validatedCSV(category,csv){
+ const grid=parseCSV(csv),expected=category==='U15'?90:110;
+ if(grid.length!==expected+1)throw Error(category+': attese '+expected+' gare, trovate '+(grid.length-1));
+ const header=grid.shift().map(x=>x.trim().toLowerCase());
+ const required=['id','phase','round','rounddate','home','away','date','time','homescore','awayscore','venue'];
+ const idx=required.map(k=>header.indexOf(k));
+ if(idx.some(x=>x<0))throw Error(category+': colonne CSV non riconosciute');
+ const refs=new Map(initialData[category].map(x=>[x.id,x])),found=new Set();
+ const list=grid.map((r,i)=>{
+  const f=Object.fromEntries(required.map((name,j)=>[name,(r[idx[j]]||'').trim()]));
+  const id=f.id.padStart(6,'0');
+  if(!/^\d{6}$/.test(id)||found.has(id)||!refs.has(id))throw Error(category+': numero gara non valido, riga '+(i+2));
+  found.add(id);
+  const base=refs.get(id);
+  if(!f.home||!f.away||f.home===f.away)throw Error(category+': nomi squadre non validi, gara '+id);
+  const homeScore=scoreOrNull(f.homescore),awayScore=scoreOrNull(f.awayscore);
+  if((homeScore===null)!==(awayScore===null))throw Error(category+': punteggio incompleto, gara '+id);
+  const phase=f.phase;
+  if(!['Andata','Ritorno'].includes(phase)||!/^[0-9]+$/.test(f.round))throw Error(category+': giornata non valida, gara '+id);
+  return {...base,id,phase,round:Number(f.round),roundDate:normalizeISO(f.rounddate),home:f.home,away:f.away,
+   date:normalizeISO(f.date),time:f.time,homeScore,awayScore,venue:f.venue};
+ });
+ return list;
+}
+async function refreshCloud(){
+ if(cloudBusy)return;
+ cloudBusy=true;cloudReady=false;cloudStatus='Collegamento ai calendari Google in corso…';render();
+ try{
+  const response=await Promise.all(Object.entries(SHEETS).map(async ([category,url])=>{
+   const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),16000);
+   try{
+    const res=await fetch(url+'?t='+Date.now(),{cache:'no-store',signal:controller.signal});
+    if(!res.ok)throw Error(category+': HTTP '+res.status);
+    return [category,validatedCSV(category,await res.text())];
+   }finally{clearTimeout(timer)}
+  }));
+  // I calendari sono sostituiti solo dopo aver validato ENTRAMBE le categorie.
+  const updated=Object.fromEntries(response);
+  data={...data,...updated};
+  try{localStorage.setItem(KEY,JSON.stringify(data))}catch(e){}
+  cloudReady=true;cloudLastSync=new Date().toLocaleString('it-IT');
+  cloudStatus='✓ Calendari U15 e U19 disponibili (copia pubblicata da Google Sheets su GitHub Pages, sola lettura).';
+ }catch(e){
+  cloudStatus='⚠ Collegamento online non riuscito ('+String(e.message||e)+'). Nessuna modifica ai dati locali. Verifica la pubblicazione su GitHub Pages e la presenza dei due file dati/u15.csv e dati/u19.csv.';
+ }finally{cloudBusy=false;render()}
+}
+
+document.getElementById('fileImport').addEventListener('change',async e=>{const file=e.target.files?.[0];if(!file)return;try{const text=await file.text(),result=parseTSV(text);if(!confirm(`Importare ${result.copy.length} gare ${result.category} dal file ${file.name}? I dati originali incorporati non vengono modificati.`))return;data[result.category]=result.copy;try{localStorage.setItem(KEY,JSON.stringify(data))}catch(e){}cat=result.category;render();showImport(`✓ Aggiornate ${result.copy.length} gare ${result.category} in questa copia dell’app.`,true)}catch(err){render();showImport('Importazione annullata. '+err.message,false)}finally{e.target.value=''}});
+render();
+refreshCloud();
+</script>
+</body></html>

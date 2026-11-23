@@ -1,0 +1,33 @@
+# STELLA BASKET MOBILE — GitHub Pages REV08
+
+Sito web gratuito per i calendari pubblici U15 e U19 della stagione 2026/27.
+
+## Come pubblicare
+
+1. Crea un repository **PUBLIC** di nome `stella-basket-mobile` su GitHub.
+2. Carica TUTTO il contenuto di questa cartella, mantenendo le sottocartelle
+   `dati/`, `scripts/` e `.github/workflows/`.
+3. Vai nelle impostazioni del repository: **Settings → Pages → Build and deployment**.
+4. Seleziona **Source: GitHub Actions** (non "Deploy from a branch").
+5. Vai su **Actions**, apri "Pubblica Stella Basket Mobile" e, se non parte da solo,
+   premi **Run workflow**. Il sito sarà su:
+   `https://TUO-USERNAME.github.io/stella-basket-mobile/`.
+
+## Aggiornamenti
+
+Il workflow recupera i due CSV pubblici di Google Sheets a ogni pubblicazione,
+poi li rende disponibili sullo stesso dominio dell'app: niente proxy né CORS.
+Un aggiornamento è programmato ogni sei ore (GitHub può ritardarlo o sospenderlo
+se il repository rimane inattivo a lungo). Si può avviare manualmente con
+**Actions → Pubblica Stella Basket Mobile → Run workflow**.
+
+Il sito non legge direttamente i gestionali Excel. Per visualizzare i nuovi
+risultati sul telefono, prima vanno aggiornati i dati nel Foglio Google.
+Il programma NON scrive sui file Excel, su Google Sheets né sulle macro.
+
+## Privacy e costo
+
+Tutti i file di questo repository e i CSV sportivi pubblicati sono pubblici.
+Non aggiungere dati personali o presenze degli atleti.
+GitHub Pages è gratuito nei repository pubblici di GitHub Free, entro le condizioni
+e i limiti di servizio previsti da GitHub. Nessuna carta di credito necessaria.
