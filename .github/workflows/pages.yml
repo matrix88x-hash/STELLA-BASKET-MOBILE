@@ -1,0 +1,44 @@
+name: Pubblica Stella Basket Mobile
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recupera il sito
+        uses: actions/checkout@v4
+      - name: Aggiorna CSV dal Foglio Google
+        run: python3 scripts/aggiorna_dati.py
+      - name: Configura GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Prepara i file pubblici
+        run: |
+          mkdir -p _site
+          cp index.html manifest.webmanifest icon.svg icon-192.png icon-512.png _site/
+          cp -r dati _site/
+          touch _site/.nojekyll
+      - name: Carica i file del sito
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Pubblica il sito
+        id: deployment
+        uses: actions/deploy-pages@v4
